@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PracticaGuias-POO-PracticaGuias-POO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cantidad",
+		"valorUnitario",
+		"fechaVenta"
+	],
+	"name" : "Venta",
+	"type" : "normal"
+}

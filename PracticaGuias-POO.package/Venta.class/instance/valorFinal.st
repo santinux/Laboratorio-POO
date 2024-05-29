@@ -1,0 +1,3 @@
+deAplicacion
+valorFinal
+	^ (valorUnitario * cantidad).

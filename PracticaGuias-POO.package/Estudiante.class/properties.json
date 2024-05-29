@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "SantinoFuentes 4/24/2024 00:51",
+	"super" : "Object",
+	"category" : "PracticaGuias-POO-PracticaGuias-POO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dni",
+		"nombre",
+		"apellido",
+		"legajo",
+		"universidades"
+	],
+	"name" : "Estudiante",
+	"type" : "normal"
+}

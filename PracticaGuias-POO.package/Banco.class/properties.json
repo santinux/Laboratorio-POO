@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PracticaGuias-POO-PracticaGuias-POO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nombre",
+		"direccion",
+		"nroTelefono",
+		"paginaWeb"
+	],
+	"name" : "Banco",
+	"type" : "normal"
+}
