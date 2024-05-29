@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PracticaGuias-POO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"datosPersonales",
+		"legajo",
+		"fechaIngreso",
+		"sueldoBasico",
+		"horarioTrabajo"
+	],
+	"name" : "Empleado",
+	"type" : "normal"
+}

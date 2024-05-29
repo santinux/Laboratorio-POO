@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Empleado",
+	"category" : "PracticaGuias-POO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"horasExtra",
+		"tituloUniversitario"
+	],
+	"name" : "EmpleadoAdministrativo",
+	"type" : "normal"
+}
