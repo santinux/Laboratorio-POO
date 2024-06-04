@@ -5,7 +5,12 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"nombre",
+		"apellido",
+		"nroDNI",
+		"cantidadHijosMenores"
+	],
 	"name" : "DatosPersona",
 	"type" : "normal"
 }
