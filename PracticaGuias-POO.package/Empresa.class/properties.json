@@ -6,7 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"empleados"
+		"empleados",
+		"porcentajeVendedor",
+		"tablaCargos",
+		"valorTituloUniversitario",
+		"valorHoraExtra"
 	],
 	"name" : "Empresa",
 	"type" : "normal"

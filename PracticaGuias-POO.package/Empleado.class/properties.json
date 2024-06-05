@@ -4,7 +4,9 @@
 	"category" : "PracticaGuias-POO",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"tablaAntiguedad"
+	],
 	"instvars" : [
 		"datosPersonales",
 		"legajo",
