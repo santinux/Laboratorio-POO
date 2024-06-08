@@ -1,4 +1,4 @@
-constructor
+instance creation
 crearConNroCuenta: unNroCuenta conFechaApertura: unaFechaApertura conMonto: unMonto
 	| c |
 	c := self new.

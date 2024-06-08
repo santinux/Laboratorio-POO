@@ -1,4 +1,4 @@
-constructor
+instance creation
 crearConNombre: unNombre conDireccion: unaDireccion conTelefono: unNroTelefono conPaginaWeb: unaPaginaWeb
 	| b |
 	b := self new.

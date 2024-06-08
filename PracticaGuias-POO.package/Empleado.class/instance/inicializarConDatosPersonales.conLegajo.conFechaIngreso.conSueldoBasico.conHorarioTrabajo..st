@@ -1,4 +1,4 @@
-constructor
+initialization
 inicializarConDatosPersonales: losDatos conLegajo: unLegajo conFechaIngreso: unaFecha conSueldoBasico: unSueldo conHorarioTrabajo: unHorario
 	datosPersonales := losDatos.
 	legajo := unLegajo.

@@ -1,4 +1,4 @@
-constructor
+initialization
 inicializarConNombre: unNombre conDireccion: unaDireccion conTelefono: unNroTelefono conPaginaWeb: unaPaginaWeb
 	nombre := unNombre.
 	direccion := unaDireccion.

@@ -1,4 +1,4 @@
-constructor
+instance creation
 crearConNombre: unNombre
 	| l |
 	l := self new.

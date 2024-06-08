@@ -1,4 +1,4 @@
-constructor
+initialization
 inicializarConNombre: unNombre conDireccion: unaDireccion
 	nombre := unNombre.
 	direccion := unaDireccion.

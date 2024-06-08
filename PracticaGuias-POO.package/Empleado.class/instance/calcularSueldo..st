@@ -1,5 +1,6 @@
 deAplicacion
 calcularSueldo: laEmpresa
-	| valorSueldo |
-	valorSueldo := sueldoBasico + self calcularAntiguedad.
+	| antiguedad valorSueldo |
+	antiguedad := self calcularAntiguedad.
+	valorSueldo := sueldoBasico + antiguedad.
 	^ valorSueldo.

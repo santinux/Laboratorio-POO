@@ -1,15 +1,14 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "SantinoFuentes 6/8/2024 19:48",
 	"super" : "Object",
 	"category" : "PracticaGuias-POO",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cantidad",
-		"valorUnitario",
-		"fechaVenta"
+		"miEmpresa",
+		"misEmpleados"
 	],
-	"name" : "Venta",
+	"name" : "TestEmpresa",
 	"type" : "normal"
 }

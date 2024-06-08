@@ -1,4 +1,4 @@
-constructor
+instance creation
 crearConNombre: unNombre conDireccion: unaDireccion
 	| u |
 	u := self new.

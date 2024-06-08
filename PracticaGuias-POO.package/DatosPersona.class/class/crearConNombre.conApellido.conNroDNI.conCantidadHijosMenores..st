@@ -1,4 +1,4 @@
-constructor
+instance creation
 crearConNombre: unNombre conApellido: unApellido conNroDNI: unNroDNI conCantidadHijosMenores: unaCantidadHijosMenores
 	| datitos |
 	datitos := self new.

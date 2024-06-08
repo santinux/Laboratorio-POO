@@ -1,4 +1,4 @@
-constructor
+instance creation
 crearConCantidad: unaCantidad conValorUnitario: unValorUnitario
 	| v |
 	v := self new.

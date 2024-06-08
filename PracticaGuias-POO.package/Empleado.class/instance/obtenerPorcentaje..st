@@ -1,2 +1,0 @@
-deAplicacion
-obtenerPorcentaje: agnos

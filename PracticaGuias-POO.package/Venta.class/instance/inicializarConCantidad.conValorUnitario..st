@@ -1,4 +1,4 @@
-constructor
+initialization
 inicializarConCantidad: unaCantidad conValorUnitario: unValorUnitario
 	cantidad := unaCantidad.
 	valorUnitario := unValorUnitario.

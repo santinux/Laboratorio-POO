@@ -1,4 +1,4 @@
-constructor
+initialization
 inicializarConDni: unDni conNombre: unNombre conApellido: unApellido conLegajo: unLegajo
 	dni := unDni.
 	nombre := unNombre.
