@@ -4,7 +4,10 @@
 	"category" : "PracticaGuias-POO",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"ValorCPPNormal",
+		"ValorCPPReducido"
+	],
 	"instvars" : [ ],
 	"name" : "LlamadaACelular",
 	"type" : "normal"
