@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Cliente",
+	"category" : "PracticaGuias-POO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ClienteParticular",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Llamada",
+	"category" : "PracticaGuias-POO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LlamadaACelular",
+	"type" : "normal"
+}
