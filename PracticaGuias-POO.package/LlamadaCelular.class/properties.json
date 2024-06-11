@@ -9,6 +9,6 @@
 		"ValorCPPReducido"
 	],
 	"instvars" : [ ],
-	"name" : "LlamadaACelular",
+	"name" : "LlamadaCelular",
 	"type" : "normal"
 }

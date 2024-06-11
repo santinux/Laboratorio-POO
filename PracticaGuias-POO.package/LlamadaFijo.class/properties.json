@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "LlamadaAFijo",
+	"name" : "LlamadaFijo",
 	"type" : "normal"
 }
