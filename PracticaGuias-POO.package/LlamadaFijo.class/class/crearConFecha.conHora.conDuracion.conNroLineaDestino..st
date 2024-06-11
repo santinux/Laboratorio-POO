@@ -3,5 +3,4 @@ crearConFecha: unaFecha conHora: unaHora conDuracion: unaDuracion conNroLineaDes
 	| llamadita |
 	llamadita := self new.
 	llamadita inicializarConFecha: unaFecha conHora: unaHora conDuracion: unaDuracion conNroLineaDestino: unNroDestino.
-	 "ValorCPP := (unaHora between: '20:00' and: '08:00') ifTrue: [ 0,22. ] ifFalse: [ 0,335 ]."
 	^ llamadita.
