@@ -6,10 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"nroCuenta",
-		"fechaApertura",
-		"saldo"
+		"cuenta",
+		"creditos"
 	],
-	"name" : "Cuenta",
+	"name" : "ClienteBanco",
 	"type" : "normal"
 }
