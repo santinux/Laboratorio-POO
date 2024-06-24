@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Empleado",
+	"super" : "EmpleadoGenerico",
 	"category" : "PracticaGuias-POO",
 	"classinstvars" : [ ],
 	"pools" : [ ],

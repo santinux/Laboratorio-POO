@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Cliente",
+	"super" : "ClienteGenerico",
 	"category" : "PracticaGuias-POO",
 	"classinstvars" : [ ],
 	"pools" : [ ],

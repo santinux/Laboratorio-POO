@@ -6,11 +6,12 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"nombre",
-		"nroCliente",
-		"nroLinea",
-		"direccion"
+		"empleados",
+		"porcentajeVendedor",
+		"tablaCargos",
+		"valorTituloUniversitario",
+		"valorHoraExtra"
 	],
-	"name" : "Cliente",
+	"name" : "EmpresaGenerica",
 	"type" : "normal"
 }

@@ -56,4 +56,4 @@ inicializar
 		at: 'Director de seguridad' put: 700000;
 		at: 'Director tecnico' put: 700000.
 		
-	miEmpresa := Empresa crearConEmpleados: misEmpleados conPorcentajeVendedor: 10 conTablaCargos: tablaCargos conValorTituloUniversitario: 1500000 conValorHoraExtra: 100000.
+	miEmpresa := EmpresaGenerica crearConEmpleados: misEmpleados conPorcentajeVendedor: 10 conTablaCargos: tablaCargos conValorTituloUniversitario: 1500000 conValorHoraExtra: 100000.

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "SantinoFuentes 6/6/2024 18:31",
-	"super" : "Empleado",
+	"super" : "EmpleadoGenerico",
 	"category" : "PracticaGuias-POO",
 	"classinstvars" : [ ],
 	"pools" : [ ],
