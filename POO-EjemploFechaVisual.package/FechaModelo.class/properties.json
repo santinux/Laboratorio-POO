@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "POO-EjemploFechaVisual-Modelo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fecha"
+	],
+	"name" : "FechaModelo",
+	"type" : "normal"
+}

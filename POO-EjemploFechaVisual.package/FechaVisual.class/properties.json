@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "BorderedMorph",
+	"category" : "POO-EjemploFechaVisual-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"miFecha",
+		"botonCerrar",
+		"botonInc",
+		"botonDec",
+		"fechaDias",
+		"fechaComp",
+		"fechaBarras",
+		"origen"
+	],
+	"name" : "FechaVisual",
+	"type" : "normal"
+}

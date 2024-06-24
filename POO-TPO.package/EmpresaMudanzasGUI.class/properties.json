@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "POO-TPO-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"origen",
+		"empresaMudanzas"
+	],
+	"name" : "EmpresaMudanzasGUI",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "POO-TPO-Modelo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cliente",
+		"listaElementos"
+	],
+	"name" : "Contrato",
+	"type" : "normal"
+}

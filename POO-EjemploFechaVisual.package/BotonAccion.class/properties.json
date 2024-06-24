@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SimpleButtonMorph",
+	"category" : "POO-EjemploFechaVisual-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fecha",
+		"mouseAction",
+		"contenedor"
+	],
+	"name" : "BotonAccion",
+	"type" : "normal"
+}
