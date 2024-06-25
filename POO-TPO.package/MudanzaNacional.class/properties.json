@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Mudanza",
+	"category" : "POO-TPO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"haciaInterior",
+		"desdeInterior",
+		"esMercaderiaFragil",
+		"valorAdicionalFragil",
+		"distanciaAcordada",
+		"valorAdicionalPorDistancia"
+	],
+	"name" : "MudanzaNacional",
+	"type" : "normal"
+}
