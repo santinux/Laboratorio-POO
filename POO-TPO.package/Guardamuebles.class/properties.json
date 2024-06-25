@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Servicio",
+	"category" : "POO-TPO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tamañoDisponible",
+		"aislamientoTermico",
+		"guardaDeLlave"
+	],
+	"name" : "Guardamuebles",
+	"type" : "normal"
+}

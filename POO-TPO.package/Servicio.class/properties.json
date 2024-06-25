@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "POO-TPO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"descripcion",
+		"nombre",
+		"valorBase"
+	],
+	"name" : "Servicio",
+	"type" : "normal"
+}

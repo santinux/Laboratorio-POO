@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Servicio",
+	"category" : "POO-TPO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"valorAdicionalEmbalaje",
+		"esDeAltura",
+		"valorAdicionalAltura",
+		"capacidad"
+	],
+	"name" : "Mudanza",
+	"type" : "normal"
+}

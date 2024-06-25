@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "POO-TPO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"razonSocial",
+		"paginaWeb",
+		"telefonoContacto",
+		"direccion",
+		"clientes",
+		"contratos",
+		"servicios"
+	],
+	"name" : "Empresa",
+	"type" : "normal"
+}
