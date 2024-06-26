@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PracticaGuias-POO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"protector",
+		"animal",
+		"observaciones"
+	],
+	"name" : "ContratoProtector",
+	"type" : "normal"
+}

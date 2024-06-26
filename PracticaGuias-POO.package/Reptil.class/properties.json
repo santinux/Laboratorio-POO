@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Animal",
+	"category" : "PracticaGuias-POO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tipoEscamas",
+		"velocidad"
+	],
+	"name" : "Reptil",
+	"type" : "normal"
+}
