@@ -11,8 +11,8 @@ crearConDescripcion: unaDescripcion conNombre: unNombre conValorBase: unValorBas
 		conValorAdicionalAltura: unValorAdicionalAltura
 		conValorAdicionalEmbalaje: unValorAdicionalEmbalaje
 		conCapacidad: unaCapacidad
-		conHaciaInterior: siHaciaInterior
-		conDesdeInterior: siDesdeInterior
+		haciaInterior: siHaciaInterior
+		desdeInterior: siDesdeInterior
 		conMercaderiaFragil: siMercaderiaFragil
 		conValorAdicionalFragil: unValorAdicionalFragil
 		conDistanciaAcordada: unaDistanciaAcordada
