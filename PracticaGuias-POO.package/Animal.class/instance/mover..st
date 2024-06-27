@@ -1,3 +1,7 @@
 as yet unclassified
 mover: tMov
-	self subclassResponsibility
+
+	| velocidad distancia |
+	velocidad := self getVelocidad.
+	distancia := velocidad * tMov.
+	^ distancia
