@@ -1,6 +1,6 @@
-Please comment me using the following template inspired by Class Responsibility Collaborator (CRC) design:
+## Una clase para representar una reserva natural.
 
-For the Class part:  State a one line summary. For example, "I represent a paragraph of text".
+Al instanciarme, solo tendrá acceso a una única instancia de mi clase, ya que mi constructor está implementado según el patrón de diseño _singleton_.
 
 For the Responsibility part: Three sentences about my main responsibilities - what I do, what I know.
 
@@ -10,7 +10,9 @@ Public API and Key Messages
 
 - message one
 - message two
-- (for bonus points) how to create instances.
+
+## Cómo instanciarme:
+
 ```
 | reservaPeritoMoreno contrato1 contrato2 protector1 protector2 colProtectores |
 
