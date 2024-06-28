@@ -1,8 +1,10 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "SantinoFuentes 6/28/2024 02:44",
 	"super" : "Object",
 	"category" : "POO-Parcial2",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"uniqueInstance"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
