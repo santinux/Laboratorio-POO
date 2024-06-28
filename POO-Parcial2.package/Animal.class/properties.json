@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "POO-Parcial2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nombre",
+		"edad",
+		"peso",
+		"distanciaRecorridaRefugio"
+	],
+	"name" : "Animal",
+	"type" : "normal"
+}

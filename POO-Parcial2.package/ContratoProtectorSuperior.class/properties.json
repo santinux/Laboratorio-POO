@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ContratoProtector",
+	"category" : "POO-Parcial2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gastos"
+	],
+	"name" : "ContratoProtectorSuperior",
+	"type" : "normal"
+}

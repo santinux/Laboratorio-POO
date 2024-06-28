@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Animal",
+	"category" : "POO-Parcial2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tipoAgua",
+		"profundidadNado"
+	],
+	"name" : "Pez",
+	"type" : "normal"
+}

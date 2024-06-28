@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "POO-Parcial2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"protectores",
+		"contratos",
+		"animales"
+	],
+	"name" : "ReservaNatural",
+	"type" : "normal"
+}
