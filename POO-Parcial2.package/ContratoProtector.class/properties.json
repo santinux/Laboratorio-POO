@@ -6,6 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"fecha",
+		"mesesDuracion",
 		"protector",
 		"animal",
 		"observaciones"
