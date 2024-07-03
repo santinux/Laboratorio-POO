@@ -2,10 +2,8 @@ instance creation
 crearConNombre: unNombre edad: unaEdad peso: unPeso pelaje: unPelaje velocidad: unaVelocidad
 
 	| unMamifero |
-	unMamifero := self new.
-	unMamifero
-		inicializarConNombre: unNombre
+	unMamifero := self crearConNombre: unNombre
 		edad: unaEdad
-		peso: unPeso
-		pelaje: unPelaje velocidad: unaVelocidad.
+		peso: unPeso.
+		unMamifero inicializarConPelaje: unPelaje velocidad: unaVelocidad.
 	^ unMamifero

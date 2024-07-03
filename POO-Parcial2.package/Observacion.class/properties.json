@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "POO-Parcial2",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fecha",
+		"distanciaRecorrida"
+	],
+	"name" : "Observacion",
+	"type" : "normal"
+}
