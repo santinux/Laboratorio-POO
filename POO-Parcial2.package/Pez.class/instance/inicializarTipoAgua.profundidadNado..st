@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 inicializarTipoAgua: unTipoAgua profundidadNado: laProfundidad
 
 	tipoAgua := unTipoAgua.

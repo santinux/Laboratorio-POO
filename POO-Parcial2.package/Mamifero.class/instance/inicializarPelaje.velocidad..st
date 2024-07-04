@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 inicializarPelaje: unPelaje velocidad: unaVelocidad
 
 	pelaje := unPelaje.

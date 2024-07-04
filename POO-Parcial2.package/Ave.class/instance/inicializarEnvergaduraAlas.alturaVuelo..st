@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 inicializarEnvergaduraAlas: laEnvergadura alturaVuelo: laAlturaVuelo
 
 	envergaduraAlas := laEnvergadura.
