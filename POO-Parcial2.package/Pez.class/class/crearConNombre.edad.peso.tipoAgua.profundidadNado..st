@@ -3,5 +3,7 @@ crearConNombre: unNombre edad: unaEdad peso: unPeso tipoAgua: unTipoAgua profund
 
 	| unPez |
 	unPez := self crearConNombre: unNombre edad: unaEdad peso: unPeso.
-	unPez inicializarConTipoAgua: unTipoAgua profundidadNado: laProfundidad.
+	unPez
+		inicializarTipoAgua: unTipoAgua
+		profundidadNado: laProfundidad.
 	^ unPez

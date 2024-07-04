@@ -1,5 +1,5 @@
 as yet unclassified
-inicializarConEnvergaduraAlas: laEnvergadura alturaVuelo: laAlturaVuelo
+inicializarEnvergaduraAlas: laEnvergadura alturaVuelo: laAlturaVuelo
 
 	envergaduraAlas := laEnvergadura.
 	alturaVuelo := laAlturaVuelo

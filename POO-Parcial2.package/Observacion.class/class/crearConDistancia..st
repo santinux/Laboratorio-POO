@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 crearConDistancia: unaDistancia
 	| unaObservacion |
 	unaObservacion := self new.

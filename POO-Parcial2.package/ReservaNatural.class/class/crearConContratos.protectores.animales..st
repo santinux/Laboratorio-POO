@@ -5,7 +5,7 @@ crearConContratos: losContratos protectores: losProtectores animales: losAnimale
 	uniqueInstance ifNil: [
 		uniqueInstance := self new.
 		uniqueInstance
-			inicializarConContratos: losContratos
+			inicializarContratos: losContratos
 			protectores: losProtectores
 			animales: losAnimales ].
 	^ uniqueInstance

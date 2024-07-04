@@ -8,6 +8,7 @@
 	"instvars" : [
 		"fecha",
 		"mesesDuracion",
+		"aporteRealizado",
 		"protector",
 		"animal",
 		"observaciones"

@@ -1,5 +1,6 @@
 initialization
-inicializarConProtector: unProtector animal: unAnimal meses: losMeses
+inicializarProtector: unProtector animal: unAnimal mesesDuracion: losMeses
+
 	fecha := Date today.
 	mesesDuracion := losMeses.
 	protector := unProtector.
