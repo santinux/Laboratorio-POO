@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"tamañoDisponible",
+		"tamagnoDisponible",
 		"aislamientoTermico",
 		"guardaDeLlave"
 	],

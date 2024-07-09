@@ -6,12 +6,12 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"haciaInterior",
 		"desdeInterior",
-		"esMercaderiaFragil",
-		"valorAdicionalFragil",
+		"haciaInterior",
+		"mercaderiaFragil",
+		"adicionalFragil",
 		"distanciaAcordada",
-		"valorAdicionalPorDistancia"
+		"adicionalDistancia"
 	],
 	"name" : "MudanzaNacional",
 	"type" : "normal"

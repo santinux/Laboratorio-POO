@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"valorAdicionalEmbalaje",
-		"esDeAltura",
-		"valorAdicionalAltura",
+		"adicionalEmbalaje",
+		"adicionalAltura",
+		"trabajoEnAltura",
 		"capacidad"
 	],
 	"name" : "Mudanza",
