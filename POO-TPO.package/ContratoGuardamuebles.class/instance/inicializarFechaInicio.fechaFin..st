@@ -1,4 +1,6 @@
-as yet unclassified
+initialization
 inicializarFechaInicio: unaFechaInicio fechaFin: unaFechaFin
+
 	fechaInicio := unaFechaInicio.
-	fechaFin := unaFechaFin 
+	fechaFin := unaFechaFin.
+	renovaciones := OrderedCollection new.
