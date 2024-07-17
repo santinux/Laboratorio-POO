@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Contrato",
+	"category" : "POO-TPFinal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fechaAcordada",
+		"horaAcordada"
+	],
+	"name" : "ContratoMudanza",
+	"type" : "normal"
+}

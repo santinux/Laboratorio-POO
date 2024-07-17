@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Mudanza",
+	"category" : "POO-TPFinal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"adicionalAduana",
+		"adicionalTransporte",
+		"seguroInternacional"
+	],
+	"name" : "MudanzaInternacional",
+	"type" : "normal"
+}

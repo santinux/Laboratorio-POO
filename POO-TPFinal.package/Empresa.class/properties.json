@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "SantinoFuentes 7/17/2024 17:07",
+	"super" : "Object",
+	"category" : "POO-TPFinal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"razonSocial",
+		"paginaWeb",
+		"telefonoContacto",
+		"direccion",
+		"clientes",
+		"contratos",
+		"servicios"
+	],
+	"name" : "Empresa",
+	"type" : "normal"
+}
