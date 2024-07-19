@@ -411,7 +411,38 @@ crearConBaseDeDatos
 										listaElementos: ''
 										fechaAcordada: (Date today addDays: -90)
 										horaAcordada: ('13:00:00' asTime));
+							add: (ContratoMudanza
+										crearConCliente: (colClientes at: 10)
+										servicio: (colServicios at: 10)
+										listaElementos: ''
+										fechaAcordada: (Date today addDays: -100)
+										horaAcordada: ('14:00:00' asTime));
 							
+							"Contratos de mudanzas internacionales"
+							add: (ContratoMudanza
+										crearConCliente: (colClientes at: 11)
+										servicio: (colServicios at: 11)
+										listaElementos: ''
+										fechaAcordada: (Date today addDays: -110)
+										horaAcordada: ('15:00:00' asTime));
+							add: (ContratoMudanza
+										crearConCliente: (colClientes at: 12)
+										servicio: (colServicios at: 12)
+										listaElementos: ''
+										fechaAcordada: (Date today addDays: -120)
+										horaAcordada: ('16:00:00' asTime));
+							add: (ContratoMudanza
+										crearConCliente: (colClientes at: 13)
+										servicio: (colServicios at: 13)
+										listaElementos: ''
+										fechaAcordada: (Date today addDays: -130)
+										horaAcordada: ('17:00:00' asTime));
+							add: (ContratoMudanza
+										crearConCliente: (colClientes at: 14)
+										servicio: (colServicios at: 14)
+										listaElementos: ''
+										fechaAcordada: (Date today addDays: -140)
+										horaAcordada: ('18:00:00' asTime));
 							yourself.
 
 	unaEmpresaMudanzas := self new.
@@ -427,6 +458,6 @@ crearConBaseDeDatos
 				 barrio: 'UNCo')
 		servicios: colServicios
 		clientes: colClientes
-		contratos: nil.
+		contratos: colContratos.
 
 	^ unaEmpresaMudanzas
