@@ -1,5 +1,5 @@
 as yet unclassified
 obtenerNombreYTelefonoCliente
 	|nombreYTelefono|
-	nombreYTelefono := nombre, ' ', telefonoContacto.
+	nombreYTelefono := nombre, ' ', (telefonoContacto asString).
 	^ nombreYTelefono.
