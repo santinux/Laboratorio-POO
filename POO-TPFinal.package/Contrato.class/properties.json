@@ -6,6 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"estado",
+		"valor",
 		"fechaFirma",
 		"listaElementos",
 		"cliente",
