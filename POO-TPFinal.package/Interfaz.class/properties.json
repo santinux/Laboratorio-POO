@@ -1,12 +1,14 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "SantinoFuentes 8/5/2024 16:14",
 	"super" : "Morph",
 	"category" : "POO-TPFinal-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"datosEmpresa"
+		"empresa",
+		"botonMinimizar",
+		"botonCerrar"
 	],
 	"name" : "Interfaz",
 	"type" : "normal"

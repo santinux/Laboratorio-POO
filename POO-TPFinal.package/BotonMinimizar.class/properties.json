@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BotonVentana",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BotonMinimizar",
+	"type" : "normal"
+}

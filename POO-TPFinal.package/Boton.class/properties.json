@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SimpleButtonMorph",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mouseAction"
+	],
+	"name" : "Boton",
+	"type" : "normal"
+}
