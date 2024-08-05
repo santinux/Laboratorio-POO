@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Contrato",
-	"category" : "POO-TPFinal-Modelo",
+	"super" : "Morph",
+	"category" : "POO-TPFinal-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"fechaAcordada",
-		"horaAcordada"
+		"datosEmpresa"
 	],
-	"name" : "ContratoMudanza",
+	"name" : "Interfaz",
 	"type" : "normal"
 }

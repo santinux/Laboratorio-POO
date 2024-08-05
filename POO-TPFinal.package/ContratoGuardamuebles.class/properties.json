@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Contrato",
-	"category" : "POO-TPFinal",
+	"category" : "POO-TPFinal-Modelo",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
