@@ -1,11 +1,12 @@
 {
-	"commentStamp" : "SantinoFuentes 8/5/2024 16:14",
+	"commentStamp" : "SantinoFuentes 8/5/2024 21:46",
 	"super" : "Morph",
 	"category" : "POO-TPFinal-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"titulo",
 		"empresa",
 		"botonMinimizar",
 		"botonCerrar"

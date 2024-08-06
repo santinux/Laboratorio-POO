@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Interfaz",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"campoDNI",
+		"botonIniciarSesion",
+		"botonRegistrarse",
+		"botonAdmin"
+	],
+	"name" : "InterfazLogin",
+	"type" : "normal"
+}

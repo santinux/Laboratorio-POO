@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "BotonVentana",
+	"name" : "BotonControlVentana",
 	"type" : "normal"
 }

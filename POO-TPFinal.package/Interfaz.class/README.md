@@ -15,8 +15,8 @@ Public API and Key Messages
    One simple example is simply gorgeous.
 
 ```
-| int |
-int := Interfaz new openInWorld
+| mudanzasNQN |
+mudanzasNQN := InterfazLogin new.
 ```
 
 Internal Representation and Key Implementation Points.

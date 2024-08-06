@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "BotonVentana",
+	"super" : "BotonControlVentana",
 	"category" : "POO-TPFinal-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
