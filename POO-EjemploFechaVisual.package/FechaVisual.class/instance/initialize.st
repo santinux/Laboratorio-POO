@@ -25,9 +25,9 @@ initialize
 	"Se crean 2 botones, que serán utilizados para solicitar el incremento y decremento de la fecha
 	según una cantidad de días dada.
 	El tercer botón botonCerrar responderá minimizando la ventana"
-	botonInc := BotonAccion new.
-	botonDec := BotonAccion new.
-	botonCerrar := BotonAccion new.
+	botonInc := BotonAccionn new.
+	botonDec := BotonAccionn new.
+	botonCerrar := BotonAccionn new.
 
 	"Se agregan los 5 elementos gráficos a FechaVisual, que actúa como elemento gráfico contenedor"
 	self addMorph: fechaDias.

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Boton",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BotonAccion",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Interfaz",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "InterfazMenuAdministrador",
+	"type" : "normal"
+}

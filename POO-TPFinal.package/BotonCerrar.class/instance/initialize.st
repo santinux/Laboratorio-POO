@@ -2,6 +2,7 @@ initialization
 initialize
 
 	super initialize.
-	self label: 'x'.
-	self color: Color red.
-	self extent: 25 @ 25
+	self
+		label: 'x';
+		color: Color red;
+		extent: 25 @ 25

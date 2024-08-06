@@ -16,7 +16,7 @@ Public API and Key Messages
 
 ```
 | mudanzasNQN |
-mudanzasNQN := InterfazLogin new.
+mudanzasNQN := InterfazLogin new empresa: EmpresaMudanzas crearConBaseDeDatos.
 ```
 
 Internal Representation and Key Implementation Points.
