@@ -5,8 +5,8 @@ crearConBaseDeDatos
 	direccionCompartida := Direccion
 		                       crearConCalle: 'Av. Pres. Figueroa Alcorta'
 		                       numero: 7597
-		                       piso: nil
-		                       dpto: nil
+		                       piso: '-'
+		                       dpto: '-'
 		                       barrio: 'Belgrano'.
 
 	colClientes := OrderedCollection new
@@ -200,7 +200,7 @@ crearConBaseDeDatos
 				                 nombre: 'Mudanza Base en Neuquén'
 				                 valorBase: 10000
 				                 trabajoEnAltura: false
-				                 adicionalAltura: nil
+				                 adicionalAltura: 0
 				                 adicionalEmbalaje: 1000
 				                 capacidad: '10 metros cúbicos'
 				                 incluyeCarga: false
@@ -237,13 +237,13 @@ crearConBaseDeDatos
 				                 nombre: 'Mudanza Base Desde el Interior'
 				                 valorBase: 50000
 				                 trabajoEnAltura: false
-				                 adicionalAltura: nil
+				                 adicionalAltura: 0
 				                 adicionalEmbalaje: 5000
 				                 capacidad: '60 metros cúbicos'
 				                 desdeInterior: true
 				                 haciaInterior: false
 				                 mercaderiaFragil: false
-				                 adicionalFragil: nil
+				                 adicionalFragil: 0
 				                 distanciaAcordada: 1500
 				                 adicionalDistancia: 5000);
 		                add: (MudanzaNacional
@@ -267,13 +267,13 @@ crearConBaseDeDatos
 				                 nombre: 'Mudanza Base Hacia el Interior'
 				                 valorBase: 50000
 				                 trabajoEnAltura: false
-				                 adicionalAltura: nil
+				                 adicionalAltura: 0
 				                 adicionalEmbalaje: 5000
 				                 capacidad: '60 metros cúbicos'
 				                 desdeInterior: false
 				                 haciaInterior: true
 				                 mercaderiaFragil: false
-				                 adicionalFragil: nil
+				                 adicionalFragil: 0
 				                 distanciaAcordada: 1500
 				                 adicionalDistancia: 5000);
 		                add: (MudanzaNacional
@@ -298,11 +298,11 @@ crearConBaseDeDatos
 				                 nombre: 'Mudanza Base Desde el Extranjero'
 				                 valorBase: 100000
 				                 trabajoEnAltura: false
-				                 adicionalAltura: nil
+				                 adicionalAltura: 0
 				                 adicionalEmbalaje: 7000
 				                 capacidad: '40 metros cúbicos'
-				                 adicionalAduana: '¿Se adiciona después?'
-				                 adicionalTransporte: '¿Se adiciona después?'
+				                 adicionalAduana: 0
+				                 adicionalTransporte: 0
 				                 seguroInternacional: false);
 		                add: (MudanzaInternacional
 				                 crearConDescripcion:
@@ -313,8 +313,8 @@ crearConBaseDeDatos
 				                 adicionalAltura: 5000
 				                 adicionalEmbalaje: 7000
 				                 capacidad: '80 metros cúbicos'
-				                 adicionalAduana: '¿Se adiciona después?'
-				                 adicionalTransporte: '¿Se adiciona después?'
+				                 adicionalAduana: 0
+				                 adicionalTransporte: 0
 				                 seguroInternacional: true);
 		                add: (MudanzaInternacional
 				                 crearConDescripcion:
@@ -322,11 +322,11 @@ crearConBaseDeDatos
 				                 nombre: 'Mudanza Base Hacia el Extranjero'
 				                 valorBase: 100000
 				                 trabajoEnAltura: false
-				                 adicionalAltura: nil
+				                 adicionalAltura: 0
 				                 adicionalEmbalaje: 7000
 				                 capacidad: '40 metros cúbicos'
-				                 adicionalAduana: '¿Se adiciona después?'
-				                 adicionalTransporte: '¿Se adiciona después?'
+				                 adicionalAduana: 0
+				                 adicionalTransporte: 0
 				                 seguroInternacional: false);
 		                add: (MudanzaInternacional
 				                 crearConDescripcion:
@@ -337,8 +337,8 @@ crearConBaseDeDatos
 				                 adicionalAltura: 5000
 				                 adicionalEmbalaje: 7000
 				                 capacidad: '80 metros cúbicos'
-				                 adicionalAduana: '¿Se adiciona después?'
-				                 adicionalTransporte: '¿Se adiciona después?'
+				                 adicionalAduana: 0
+				                 adicionalTransporte: 0
 				                 seguroInternacional: true);
 		                yourself.
 
@@ -444,8 +444,8 @@ crearConBaseDeDatos
 		direccion: (Direccion
 				 crearConCalle: 'Buenos Aires'
 				 numero: 1400
-				 piso: nil
-				 dpto: nil
+				 piso: '-'
+				 dpto: '-'
 				 barrio: 'UNCo')
 		servicios: colServicios
 		clientes: colClientes
