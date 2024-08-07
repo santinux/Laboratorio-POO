@@ -9,9 +9,10 @@ validarUsuario: unCampoDNI
 			usuario
 				ifNotNil: [
 					self delete.
-					InterfazMenuUsuario new empresa: empresa usuario: usuario ]
+					InterfazMenuUsuario crearConEmpresa: empresa usuario: usuario ]
 				ifNil: [
-					InterfazAlertaError
-						new contenido: 'El DNI ingresado no corresponde a un cliente' ] ]
+					InterfazAlertaError new contenido:
+						'El DNI ingresado no corresponde a un cliente' ] ]
 		ifFalse: [
-			InterfazAlertaError new contenido: 'No ha ingresado un número de DNI' ]
+			InterfazAlertaError new contenido:
+				'No ha ingresado un número de DNI' ]

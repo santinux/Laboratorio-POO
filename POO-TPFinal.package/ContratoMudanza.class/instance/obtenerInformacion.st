@@ -1,6 +1,8 @@
 as yet unclassified
 obtenerInformacion
+
 	| informacion |
 	informacion := super obtenerInformacion.
-	informacion := informacion + ' Fecha acordada: ' + fechaAcordada + ' Hora acordada: ' + horaAcordada.
+	informacion := informacion , ' Fecha acordada: ' , fechaAcordada asString
+	               , ' Hora acordada: ' , horaAcordada asString.
 	^ informacion

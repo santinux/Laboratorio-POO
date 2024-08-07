@@ -7,7 +7,7 @@ initialize
 		borderColor: Color black;
 		borderWidth: 2;
 		useRoundedCorners.
-	self extent: 500 @ 350.
+	self extent: 750 @ 450.
 
 	botonCerrar := BotonCerrar new.
 	botonCerrar
@@ -19,4 +19,4 @@ initialize
 	botonMinimizar
 		position: botonCerrar position - (23 @ 0);
 		mouseAction: [ self collapse ].
-	self addMorphFront: botonMinimizar.
+	self addMorphFront: botonMinimizar
