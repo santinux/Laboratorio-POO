@@ -8,6 +8,7 @@
 	"instvars" : [
 		"nombre",
 		"apellido",
+		"nroDNI",
 		"telefonoContacto",
 		"direccion"
 	],

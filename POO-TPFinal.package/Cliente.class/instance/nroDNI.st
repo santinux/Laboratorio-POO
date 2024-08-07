@@ -1,0 +1,3 @@
+accessing
+nroDNI
+	^ nroDNI

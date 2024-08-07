@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "InterfazAlerta",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "InterfazAlertaError",
+	"type" : "normal"
+}

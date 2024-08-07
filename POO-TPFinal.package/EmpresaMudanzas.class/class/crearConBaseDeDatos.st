@@ -12,152 +12,152 @@ crearConBaseDeDatos
 	colClientes := OrderedCollection new
 		               add: (Cliente
 				                crearConNombre: 'Franco'
-				                apellido: 'Armani'
+				                apellido: 'Armani' nroDNI: 10000000
 				                telefonoContacto: 1000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Jonatan'
-				                apellido: 'Maidana'
+				                apellido: 'Maidana' nroDNI: 11000000
 				                telefonoContacto: 2000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Marcelo'
-				                apellido: 'Saracchi'
+				                apellido: 'Saracchi' nroDNI: 12000000
 				                telefonoContacto: 3000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Jorge'
-				                apellido: 'Moreira'
+				                apellido: 'Moreira' nroDNI: 13000000
 				                telefonoContacto: 4000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Bruno'
-				                apellido: 'Zuculini'
+				                apellido: 'Zuculini' nroDNI: 14000000
 				                telefonoContacto: 5000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Luciano'
-				                apellido: 'Lollo'
+				                apellido: 'Lollo' nroDNI: 15000000
 				                telefonoContacto: 6000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Rodrigo'
-				                apellido: 'Mora'
+				                apellido: 'Mora' nroDNI: 16000000
 				                telefonoContacto: 7000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Juan'
-				                apellido: 'Quintero'
+				                apellido: 'Quintero' nroDNI: 17000000
 				                telefonoContacto: 8000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Marcelo'
-				                apellido: 'Larrondo'
+				                apellido: 'Larrondo' nroDNI: 18000000
 				                telefonoContacto: 9000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Gonzalo'
-				                apellido: 'Martínez'
+				                apellido: 'Martínez' nroDNI: 19000000
 				                telefonoContacto: 10000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Nicolás'
-				                apellido: 'De La Cruz'
+				                apellido: 'De La Cruz' nroDNI: 20000000
 				                telefonoContacto: 11000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Benjamín'
-				                apellido: 'Rollheiser'
+				                apellido: 'Rollheiser' nroDNI: 21000000
 				                telefonoContacto: 12000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Santiago'
-				                apellido: 'Sosa'
+				                apellido: 'Sosa' nroDNI: 22000000
 				                telefonoContacto: 13000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Germán'
-				                apellido: 'Lux'
+				                apellido: 'Lux' nroDNI: 23000000
 				                telefonoContacto: 14000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Exequiel'
-				                apellido: 'Palacios'
+				                apellido: 'Palacios' nroDNI:  24000000
 				                telefonoContacto: 15000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Ariel'
-				                apellido: 'Rojas'
+				                apellido: 'Rojas' nroDNI: 25000000
 				                telefonoContacto: 16000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Carlos'
-				                apellido: 'Auzqui'
+				                apellido: 'Auzqui' nroDNI: 26000000
 				                telefonoContacto: 17000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Camilo'
-				                apellido: 'Mayada'
+				                apellido: 'Mayada'  nroDNI: 27000000
 				                telefonoContacto: 18000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Rafael'
-				                apellido: 'Borré'
+				                apellido: 'Borré' nroDNI: 28000000
 				                telefonoContacto: 19000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Milton'
-				                apellido: 'Casco'
+				                apellido: 'Casco' nroDNI: 29000000
 				                telefonoContacto: 20000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Iván'
-				                apellido: 'Rossi'
+				                apellido: 'Rossi' nroDNI: 30000000
 				                telefonoContacto: 21000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Javier'
-				                apellido: 'Pinola'
+				                apellido: 'Pinola' nroDNI: 31000000
 				                telefonoContacto: 22000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Leonardo'
-				                apellido: 'Ponzio'
+				                apellido: 'Ponzio' nroDNI: 32000000
 				                telefonoContacto: 23000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Enzo'
-				                apellido: 'Pérez'
+				                apellido: 'Pérez' nroDNI: 33000000
 				                telefonoContacto: 24000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Enrique'
-				                apellido: 'Bologna'
+				                apellido: 'Bologna' nroDNI: 34000000
 				                telefonoContacto: 25000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Ignacio'
-				                apellido: 'Fernández'
+				                apellido: 'Fernández' nroDNI: 35000000
 				                telefonoContacto: 26000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Lucas'
-				                apellido: 'Pratto'
+				                apellido: 'Pratto' nroDNI: 36000000
 				                telefonoContacto: 27000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Lucas'
-				                apellido: 'Martínez Quarta'
+				                apellido: 'Martínez Quarta' nroDNI: 37000000
 				                telefonoContacto: 28000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Gonzalo'
-				                apellido: 'Montiel'
+				                apellido: 'Montiel' nroDNI: 38000000
 				                telefonoContacto: 29000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Ignacio'
-				                apellido: 'Scocco'
+				                apellido: 'Scocco' nroDNI: 39000000
 				                telefonoContacto: 30000000
 				                direccion: direccionCompartida);
 		               yourself.
