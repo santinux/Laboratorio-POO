@@ -19,4 +19,10 @@ initialize
 	botonMinimizar
 		position: botonCerrar position - (23 @ 0);
 		mouseAction: [ self collapse ].
-	self addMorphFront: botonMinimizar
+	self addMorphFront: botonMinimizar.
+
+	botonVolver := BotonVolver new.
+	botonVolver
+		position: self topLeft;
+		mouseAction: [ historial last ].
+	self addMorphFront: botonVolver

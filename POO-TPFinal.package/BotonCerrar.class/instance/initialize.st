@@ -3,6 +3,6 @@ initialize
 
 	super initialize.
 	self
-		label: 'x';
+		contenido: 'x';
 		color: Color red;
 		extent: 25 @ 25

@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "SimpleButtonMorph",
+	"super" : "BotonControlVentana",
 	"category" : "POO-TPFinal-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"contenido",
-		"mouseAction"
-	],
-	"name" : "Boton",
+	"instvars" : [ ],
+	"name" : "BotonVolver",
 	"type" : "normal"
 }

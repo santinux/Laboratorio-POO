@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "SantinoFuentes 8/6/2024 02:53",
-	"super" : "Morph",
+	"super" : "BorderedMorph",
 	"category" : "POO-TPFinal-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -9,6 +9,7 @@
 		"titulo",
 		"empresa",
 		"usuario",
+		"historial",
 		"botonVolver",
 		"botonMinimizar",
 		"botonCerrar"
