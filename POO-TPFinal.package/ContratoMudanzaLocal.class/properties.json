@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ContratoMudanza",
+	"category" : "POO-TPFinal-Modelo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ContratoMudanzaLocal",
+	"type" : "normal"
+}

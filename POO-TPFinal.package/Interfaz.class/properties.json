@@ -4,7 +4,9 @@
 	"category" : "POO-TPFinal-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"Historial"
+	],
 	"instvars" : [
 		"titulo",
 		"empresa",

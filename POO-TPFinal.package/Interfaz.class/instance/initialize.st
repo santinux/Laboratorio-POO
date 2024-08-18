@@ -24,5 +24,8 @@ initialize
 	botonVolver := BotonVolver new.
 	botonVolver
 		position: self topLeft;
-		mouseAction: [ historial last ].
-	self addMorphFront: botonVolver
+		mouseAction: [ self historialVolver: historial ].
+	self addMorphFront: botonVolver.
+
+	historial := Stack new.
+	historial push: self

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "SantinoFuentes 8/8/2024 01:42",
+	"super" : "LinkedList",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PilaNavegacion",
+	"type" : "normal"
+}
