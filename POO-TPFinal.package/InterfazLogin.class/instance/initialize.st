@@ -28,9 +28,11 @@ initialize
 			              self delete.
 			              InterfazMenuAdministrador new empresa: empresa ].
 	self agregarMorphCentrado: botonAdmin conMargen: 40.
-	
+
 	empresa ifNotNil: [
 		empresa addDependent: self.
 		self update: empresa ].
 
 	self openCenteredInWorld
+	"(self openInWindowLabeled: 'Mudanzas NQN') window bounds:
+		(self window center: self currentWorld bounds center)"

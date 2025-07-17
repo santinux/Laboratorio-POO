@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"menu",
+		"text",
+		"login"
+	],
+	"name" : "SpVentanaTest",
+	"type" : "normal"
+}
