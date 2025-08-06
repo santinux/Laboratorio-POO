@@ -1,3 +1,7 @@
 as yet unclassified
 cancelar
-	"self esCancelable ifTrue: [ obtenerValorMulta ifNotNil: [ cobrarMulta: obtenerValorMulta ] ]"
+	| valorMulta |
+	valorMulta := self obtenerValorMulta.
+	estado := 'cancelado'.
+	valor := valorMulta.
+	^ true
