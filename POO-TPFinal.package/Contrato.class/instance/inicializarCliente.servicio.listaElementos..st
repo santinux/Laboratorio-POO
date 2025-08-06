@@ -7,4 +7,3 @@ inicializarCliente: unCliente servicio: unServicio listaElementos: unaListaEleme
 	estado := 'activo'.
 	valor := servicio obtenerValorFinal.
 	fechaFirma := Date today.
-	idContrato := ''
