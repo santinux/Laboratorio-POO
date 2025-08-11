@@ -1,0 +1,3 @@
+as yet unclassified
+esReprogramable
+self subclassResponsibility 

@@ -6,4 +6,6 @@ renovarContrato: unIdContrato fechaFin: unaFechaFin listaElementos: unaListaElem
 		              detect: [ :unContrato |
 		              unContrato esContrato: unIdContrato ]
 		              ifNone: [ nil ].
-		encontrado ifNotNil: [ encontrado esActivo ifTrue: [ encontrado renovar: unaFechaFin ] ]
+	encontrado ifNotNil: [
+		(encontrado esActivo and: [ encontrado esGuardamuebles ]) ifTrue: [
+			encontrado renovar: unaFechaFin listaElementos: unaListaElementos] ]

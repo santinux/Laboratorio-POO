@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"fechaAcordada",
-		"horaAcordada"
+		"horaAcordada",
+		"noReprogramado"
 	],
 	"name" : "ContratoMudanza",
 	"type" : "normal"

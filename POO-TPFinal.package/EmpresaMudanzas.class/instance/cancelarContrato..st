@@ -13,4 +13,5 @@ cancelarContrato: unIdContrato
 					encontrado cancelar.
 					respuesta := 'Contrato cancelado' ]
 				ifFalse: [ respuesta := 'Contrato inactivo' ] ]
-		ifNil: [ respuesta := 'Contrato no encontrado' ]
+		ifNil: [ respuesta := 'Contrato no encontrado' ].
+		^ respuesta 
