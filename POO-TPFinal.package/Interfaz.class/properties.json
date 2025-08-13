@@ -4,17 +4,11 @@
 	"category" : "POO-TPFinal-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"Historial"
-	],
+	"classvars" : [ ],
 	"instvars" : [
 		"titulo",
 		"empresa",
-		"usuario",
-		"historial",
-		"botonVolver",
-		"botonMinimizar",
-		"botonCerrar"
+		"usuario"
 	],
 	"name" : "Interfaz",
 	"type" : "normal"

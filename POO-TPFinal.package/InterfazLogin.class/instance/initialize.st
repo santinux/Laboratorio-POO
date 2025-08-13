@@ -31,8 +31,4 @@ initialize
 
 	empresa ifNotNil: [
 		empresa addDependent: self.
-		self update: empresa ].
-
-	self openCenteredInWorld
-	"(self openInWindowLabeled: 'Mudanzas NQN') window bounds:
-		(self window center: self currentWorld bounds center)"
+		self update: empresa ]

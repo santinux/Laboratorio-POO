@@ -1,11 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "BotonControlVentana",
+	"super" : "SystemWindow",
 	"category" : "POO-TPFinal-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "BotonCerrar",
+	"instvars" : [
+		"barraNavegacion",
+		"pilaNavegacion",
+		"morphContenido"
+	],
+	"name" : "Navegador",
 	"type" : "normal"
 }

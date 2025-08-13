@@ -1,4 +1,11 @@
 as yet unclassified
 agregarMorphCentrado: unMorph conMargen: unMargen
-	unMorph position: (((self width - unMorph width) / 2)@(self lastSubmorph bottom + unMargen)).
-	self addMorphBack: unMorph.
+
+	self submorphs
+		ifNotEmpty:  [
+			unMorph position:
+				self width - unMorph width / 2
+				@ (self lastSubmorph bottom + unMargen) ]
+		ifEmpty: [
+		unMorph position: self width - unMorph width / 2 @ unMargen ].
+	self addMorphBack: unMorph

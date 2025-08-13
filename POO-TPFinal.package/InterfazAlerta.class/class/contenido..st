@@ -1,4 +1,4 @@
 accessing
 contenido: unContenido
 
-	self inicializarContenido: unContenido
+	^ self new inicializarContenido: unContenido
