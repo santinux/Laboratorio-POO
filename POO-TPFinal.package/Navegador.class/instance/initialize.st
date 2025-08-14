@@ -3,10 +3,13 @@ initialize
 
 	super initialize.
 	self setLabel: 'Navegador Mudanzas NQN'.
-	self inicializarMorphContenido.
+	self extent: 750 @ 450.
 	self inicializarBarraNavegacion.
 	self inicializarPilaNavegacion.
+	self inicializarContenedorVentana.
 	self addMorph: barraNavegacion frame: (0 @ 0 corner: 1 @ 0.075).
-	self addMorph: morphContenido frame: (0 @ 0.075 corner: 1 @ 1).
-	"Tamaño de la ventana por defecto"
-	self extent: 750 @ 450
+	self addMorph: contenedorVentana frame: (0 @ 0.075 corner: 1 @ 1).
+	"Primer ventana para el login"
+	self agregarVentana: (InterfazLogin new
+			 navegador: self
+			 empresa: EmpresaMudanzas crearConBaseDeDatos)

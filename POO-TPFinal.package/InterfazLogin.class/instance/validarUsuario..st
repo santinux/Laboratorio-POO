@@ -8,8 +8,10 @@ validarUsuario: unCampoDNI
 			usuario := empresa obtenerClienteConDNI: unNroDNI.
 			usuario
 				ifNotNil: [
-					self delete.
-					InterfazMenuUsuario crearConEmpresa: empresa usuario: usuario ]
+					navegador agregarVentana:
+						(InterfazMenuUsuario crearConNavegador: navegador empresa: empresa usuario: usuario)
+					"self delete.
+					InterfazMenuUsuario crearConEmpresa: empresa usuario: usuario" ]
 				ifNil: [
 					InterfazAlertaError new contenido:
 						'El DNI ingresado no corresponde a un cliente' ] ]

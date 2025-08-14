@@ -8,7 +8,7 @@
 	"instvars" : [
 		"barraNavegacion",
 		"pilaNavegacion",
-		"morphContenido"
+		"contenedorVentana"
 	],
 	"name" : "Navegador",
 	"type" : "normal"

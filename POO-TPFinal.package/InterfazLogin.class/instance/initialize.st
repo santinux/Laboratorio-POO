@@ -14,19 +14,12 @@ initialize
 	botonIniciarSesion mouseAction: [ self validarUsuario: campoDNI ].
 	self agregarMorphCentrado: botonIniciarSesion conMargen: 20.
 
-	botonRegistrarse := BotonAccion new
-		                    label: 'Registrarse';
-		                    mouseAction: [
-			                    self delete.
-			                    InterfazRegistroUsuario new empresa: empresa ].
-	self agregarMorphCentrado: botonRegistrarse conMargen: 20.
-
 	botonAdmin := BotonAccion new
 		              label: 'Modo Administrador del Sistema';
 		              color: Color orange;
 		              mouseAction: [
-			              self delete.
-			              InterfazMenuAdministrador new empresa: empresa ].
+			              navegador agregarVentana:
+					              (InterfazMenuAdministrador new empresa: empresa) ].
 	self agregarMorphCentrado: botonAdmin conMargen: 40.
 
 	empresa ifNotNil: [

@@ -1,10 +1,10 @@
 as yet unclassified
 goBack
-	"Implement your back action here"
 
 	self inform: 'Volver presionado'.
-	pilaNavegacion obtenerTope
-		close;
-		desapilar.
-	morphContenido := pilaNavegacion ifNotEmpty:
-		                  pilaNavegacion obtenerTope
+	contenedorVentana delete.
+	pilaNavegacion desapilar.
+	contenedorVentana := pilaNavegacion
+		                     ifNotEmpty: [ pilaNavegacion obtenerTope ]
+		                     ifEmpty: [ nil ].
+	self actualizarVentana
