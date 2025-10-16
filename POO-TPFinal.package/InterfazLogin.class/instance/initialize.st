@@ -2,6 +2,9 @@ initialization
 initialize
 
 	super initialize.
+	self hResizing: #spaceFill;
+     vResizing: #spaceFill.
+
 	self titulo: 'Mudanzas-NQN'.
 	campoDNI := RubTextFieldMorph new
 		            extent: 275 @ 20;

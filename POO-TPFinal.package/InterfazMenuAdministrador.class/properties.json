@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"botonListado",
+		"botonServicio",
+		"test"
+	],
 	"name" : "InterfazMenuAdministrador",
 	"type" : "normal"
 }
