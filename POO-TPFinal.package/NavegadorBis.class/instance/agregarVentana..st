@@ -1,6 +1,5 @@
 as yet unclassified
 agregarVentana: unaVentana
-	unaVentana hResizing: #spaceFill;
-		vResizing: #spaceFill.
+
 	pilaNavegacion apilar: unaVentana.
 	self actualizarVentana

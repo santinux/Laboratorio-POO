@@ -2,10 +2,8 @@ initialization
 initialize
 
 	super initialize.
-	self hResizing: #spaceFill;
-     vResizing: #spaceFill.
 
-	self titulo: 'Mudanzas-NQN'.
+	self titulo: 'Mudanzas-NQN Login'.
 	campoDNI := RubTextFieldMorph new
 		            extent: 275 @ 20;
 		            ghostText: 'Ingrese su DNI'.

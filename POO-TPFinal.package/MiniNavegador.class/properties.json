@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SystemWindow",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contenedorVentana"
+	],
+	"name" : "MiniNavegador",
+	"type" : "normal"
+}

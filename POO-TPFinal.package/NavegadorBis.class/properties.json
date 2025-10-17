@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SystemWindow",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"barraNavegacion",
+		"pilaNavegacion",
+		"contenedorVentana"
+	],
+	"name" : "NavegadorBis",
+	"type" : "normal"
+}

@@ -13,11 +13,6 @@ inicializarBarraNavegacion
 		               extent: 80 @ 20;
 		               position: barraNavegacion position + (5 @ 5);
 		               useRoundedCorners.
-	"botonVolver on: #mouseUp send: #goBack to: self."
-	botonVolver on: #mouseUp send: #volver to: self.
-
-	self
-		hResizing: #spaceFill;
-		vResizing: #spaceFill.
+	botonVolver on: #mouseUp send: #goBack to: self.
 
 	barraNavegacion addMorph: botonVolver
