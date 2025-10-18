@@ -1,5 +1,5 @@
 accessing
-inicializarContenido: unContenido
+contenido: unContenido
 
 	contenido := StringMorph new
 		             contents: unContenido;
