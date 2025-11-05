@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 	self titulo: 'Modo Administrador'.
-	
+
 	test := RubTextFieldMorph new
 		        extent: 275 @ 20;
 		        ghostText: 'Ingrese un DNI'.
@@ -12,11 +12,10 @@ initialize
 	botonListado := BotonAccion new
 		                label: 'Listar contratos semanales';
 		                color: Color orange;
-		                mouseAction: [ " navegador agregarVentana:
-					              (InterfazMenuAdministrador new empresa: empresa)"
+		                mouseAction: [ "mostrarListadoContratos"
 			                 ].
 	self agregarMorphCentrado: botonListado conMargen: 20.
-	
+
 	botonServicio := BotonAccion new
 		                 label: 'Agregar servicio';
 		                 color: Color orange;

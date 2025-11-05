@@ -1,17 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Interfaz",
+	"super" : "SpPresenter",
 	"category" : "POO-TPFinal-Vista",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"campoDNI",
-		"campoContrasegna",
-		"botonIniciarSesion",
-		"botonRegistrarse",
-		"botonAdmin"
+		"tablaContratos"
 	],
-	"name" : "InterfazLogin",
+	"name" : "TablaContratosPresenter",
 	"type" : "normal"
 }
