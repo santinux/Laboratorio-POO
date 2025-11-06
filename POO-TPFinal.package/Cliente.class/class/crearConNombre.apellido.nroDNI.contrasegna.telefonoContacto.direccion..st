@@ -1,5 +1,5 @@
 instance creation
-crearConNombre: unNombre apellido: unApellido nroDNI: unNroDNI telefonoContacto: unTelefonoContacto direccion: unaDireccion
+crearConNombre: unNombre apellido: unApellido nroDNI: unNroDNI contrasegna: unaContrasegna telefonoContacto: unTelefonoContacto direccion: unaDireccion
 
 	| unCliente |
 	unCliente := self new.
@@ -7,6 +7,7 @@ crearConNombre: unNombre apellido: unApellido nroDNI: unNroDNI telefonoContacto:
 		inicializarNombre: unNombre
 		apellido: unApellido
 		nroDNI: unNroDNI
+		contrasegna: unaContrasegna
 		telefonoContacto: unTelefonoContacto
 		direccion: unaDireccion.
 	^ unCliente

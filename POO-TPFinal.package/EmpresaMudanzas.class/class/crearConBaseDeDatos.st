@@ -14,180 +14,210 @@ crearConBaseDeDatos
 				                crearConNombre: 'Franco'
 				                apellido: 'Armani'
 				                nroDNI: 10000000
+										contrasegna: '123qwe'
 				                telefonoContacto: 1000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Jonatan'
 				                apellido: 'Maidana'
 				                nroDNI: 11000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 2000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Marcelo'
 				                apellido: 'Saracchi'
 				                nroDNI: 12000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 3000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Jorge'
 				                apellido: 'Moreira'
 				                nroDNI: 13000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 4000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Bruno'
 				                apellido: 'Zuculini'
 				                nroDNI: 14000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 5000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Luciano'
 				                apellido: 'Lollo'
 				                nroDNI: 15000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 6000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Rodrigo'
 				                apellido: 'Mora'
 				                nroDNI: 16000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 7000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Juan'
 				                apellido: 'Quintero'
 				                nroDNI: 17000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 8000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Marcelo'
 				                apellido: 'Larrondo'
 				                nroDNI: 18000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 9000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Gonzalo'
 				                apellido: 'Martínez'
 				                nroDNI: 19000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 10000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Nicolás'
 				                apellido: 'De La Cruz'
 				                nroDNI: 20000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 11000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Benjamín'
 				                apellido: 'Rollheiser'
 				                nroDNI: 21000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 12000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Santiago'
 				                apellido: 'Sosa'
 				                nroDNI: 22000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 13000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Germán'
 				                apellido: 'Lux'
 				                nroDNI: 23000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 14000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Exequiel'
 				                apellido: 'Palacios'
 				                nroDNI: 24000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 15000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Ariel'
 				                apellido: 'Rojas'
 				                nroDNI: 25000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 16000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Carlos'
 				                apellido: 'Auzqui'
 				                nroDNI: 26000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 17000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Camilo'
 				                apellido: 'Mayada'
 				                nroDNI: 27000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 18000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Rafael'
 				                apellido: 'Borré'
 				                nroDNI: 28000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 19000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Milton'
 				                apellido: 'Casco'
 				                nroDNI: 29000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 20000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Iván'
 				                apellido: 'Rossi'
 				                nroDNI: 30000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 21000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Javier'
 				                apellido: 'Pinola'
 				                nroDNI: 31000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 22000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Leonardo'
 				                apellido: 'Ponzio'
 				                nroDNI: 32000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 23000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Enzo'
 				                apellido: 'Pérez'
 				                nroDNI: 33000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 24000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Enrique'
 				                apellido: 'Bologna'
 				                nroDNI: 34000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 25000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Ignacio'
 				                apellido: 'Fernández'
 				                nroDNI: 35000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 26000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Lucas'
 				                apellido: 'Pratto'
 				                nroDNI: 36000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 27000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Lucas'
 				                apellido: 'Martínez Quarta'
 				                nroDNI: 37000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 28000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Gonzalo'
 				                apellido: 'Montiel'
 				                nroDNI: 38000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 29000000
 				                direccion: direccionCompartida);
 		               add: (Cliente
 				                crearConNombre: 'Ignacio'
 				                apellido: 'Scocco'
 				                nroDNI: 39000000
+				contrasegna: '123qwe'
 				                telefonoContacto: 30000000
 				                direccion: direccionCompartida);
 		               yourself.
@@ -373,8 +403,8 @@ crearConBaseDeDatos
 										tamagnoDisponible: '40 metros cúbicos'
 										aislamientoTermico: true
 										guardaDeLlave: true);"
-"Empresa de Mudanzas"
-colContratos := OrderedCollection new.
+	"Empresa de Mudanzas"
+	colContratos := OrderedCollection new.
 	unaEmpresaMudanzas := self new.
 	unaEmpresaMudanzas
 		inicializarRazonSocial: 'MudanzasNQN'

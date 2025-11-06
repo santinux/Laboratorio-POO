@@ -9,6 +9,7 @@
 		"nombre",
 		"apellido",
 		"nroDNI",
+		"contrasegna",
 		"telefonoContacto",
 		"direccion"
 	],
