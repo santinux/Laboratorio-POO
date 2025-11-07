@@ -2,7 +2,7 @@ initialization
 initialize
 
 	super initialize.
-	self titulo: 'Modo Administrador'.
+	self titulo: 'Menú Administrador'.
 
 	test := RubTextFieldMorph new
 		        extent: 275 @ 20;
@@ -12,8 +12,7 @@ initialize
 	botonListado := BotonAccion new
 		                label: 'Listar contratos semanales';
 		                color: Color orange;
-		                mouseAction: [ "mostrarListadoContratos"
-			                 ].
+		                mouseAction: [ "mostrarListadoContratos" ].
 	self agregarMorphCentrado: botonListado conMargen: 20.
 
 	botonServicio := BotonAccion new
