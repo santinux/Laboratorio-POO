@@ -11,7 +11,8 @@
 		"nroDNI",
 		"contrasegna",
 		"telefonoContacto",
-		"direccion"
+		"direccion",
+		"ThePepe"
 	],
 	"name" : "Cliente",
 	"type" : "normal"
