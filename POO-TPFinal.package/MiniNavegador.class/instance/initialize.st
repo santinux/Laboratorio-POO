@@ -5,7 +5,7 @@ initialize
 	super initialize.
 
 	"1. Configuración de la ventana principal"
-	self setLabel: 'Mini Navegador de Prueba'.
+	self setLabel: 'Mega Mini Navegador de Prueba'.
 	self extent: 400 @ 300.
 
 	"2. Inicialización del contenedor (usamos PanelMorph, más idiomático para un contenedor visible)"
