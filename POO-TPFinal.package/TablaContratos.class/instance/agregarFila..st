@@ -36,7 +36,7 @@ agregarFila: unaColeccionDatos
 		celda addMorph: texto.
 		fila addMorph: celda
 	].
-	alto:=alto +30.
+	alto:=alto +27.
 	contenedor extent: ancho @ alto.
 	filas add: fila.
 	contenedor addMorph: fila. 
