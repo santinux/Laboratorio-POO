@@ -1,27 +1,24 @@
 accessing
 inicializarNavegador: unNavegador empresa: unaEmpresa usuario: unUsuario
 
-	| contratos tabla datosContratos datosContratos2 |
+	| contratos tablaM tablaG datosContratos datosContratos2 |
 	self navegador: unNavegador empresa: unaEmpresa.
 	usuario := unUsuario.
 	contratos := empresa obtenerContratosDeCliente: usuario.
 	
 	contratos := empresa obtenerContratosDeCliente: (empresa obtenerClienteConDNI: 20000000).
 
-tabla := TablaContratos 
-	crearConEncabezados: #('ID' 'Estado' 'Valor' 'Fecha' 'Servicio')
-	ancho: 740
+	tablaG := TablaContratos 
+	crearConEncabezados: ContratoGuardamuebles  obtenerEncabezadoGuardamueble 
+	ancho: 1400
+	alto: 30.
+	
+	tablaM := TablaContratos 
+	crearConEncabezados: ContratoMudanza   obtenerEncabezadoMudanza 
+	ancho: 1400
 	alto: 30.
 
-datosContratos := contratos collect: [ :contrato |
-	OrderedCollection new
-		add: contrato obtenerId;
-		add: (contrato esActivo ifTrue: ['Activo'] ifFalse: ['Inactivo']);
-		add: contrato obtenerValor ;
-		add: contrato obtenerFechaFirma ;
-		add: contrato obtenerNombreServicio ;
-		yourself
-].
+datosContratos := contratos collect: [ :contrato |contrato obtenerInformacion ].
 
 datosContratos2 := contratos collect: [ :contrato |
 	OrderedCollection new
@@ -33,6 +30,7 @@ datosContratos2 := contratos collect: [ :contrato |
 		yourself
 ].
 			
-tabla agregarFilas: datosContratos.
-tabla agregarFilas: datosContratos2.
-self agregarMorphCentrado: tabla obtenerMorph conMargen:10.
+tablaM agregarFilas: datosContratos.
+tablaM agregarFilas: datosContratos2.
+"self agregarMorphCentrado: tablaG obtenerMorph conMargen:10."
+self agregarMorphCentrado: tablaM obtenerMorph conMargen:10.

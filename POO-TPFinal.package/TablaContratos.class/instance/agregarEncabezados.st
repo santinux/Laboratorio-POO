@@ -22,7 +22,7 @@ agregarEncabezados
 			borderColor: Color black;
 			extent: anchoColumna @ 30;
 			hResizing: #spaceFill;
-			vResizing: #spaceFill.
+			vResizing: #shrinkWrap.
 		
 		texto := StringMorph new
 			contents: encabezado;

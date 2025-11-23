@@ -1,10 +1,13 @@
 as yet unclassified
 obtenerInformacion
+	| informacion |	
+	informacion:= 
+	OrderedCollection new
+		add: idContrato ;
+		add: (self esActivo  ifTrue: ['Activo'] ifFalse: ['Inactivo']);
+		add: valor  ;
+		add: fechaFirma ;
+		add: servicio nombre;
+		yourself.
 
-	| informacion |
-	informacion := 'ID Contrato: ' , idContrato asString
-						  , ' Estado: '
-	               , estado , ' Valor: ' , valor asString
-	               , ' Fecha firma: ' , fechaFirma asString
-	               , ' Tipo de servicio: ' , servicio nombre.
 	^ informacion
