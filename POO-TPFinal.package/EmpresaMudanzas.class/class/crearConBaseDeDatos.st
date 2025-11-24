@@ -441,6 +441,12 @@ crearConBaseDeDatos
 			 fechaFin: (Date today addDays: 30)).
 	"Contratos de mudanzas locales"
 	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+			 crearConCliente: (colClientes at: 1)
+			 servicio: (colServicios at: 4)
+			 listaElementos: ''
+			 fechaAcordada: (Date today addDays: -40)
+			 horaAcordada: '08:00:00' asTime).
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
 			 crearConCliente: (colClientes at: 4)
 			 servicio: (colServicios at: 4)
 			 listaElementos: ''

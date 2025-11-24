@@ -34,7 +34,7 @@ agregarFila: unaColeccionDatos
 		
 		texto position: celda position + (5 @ 5).
 		celda addMorph: texto.
-		fila addMorph: celda
+		fila addMorphBack: celda
 	].
 	alto:=alto +27.
 	contenedor extent: ancho @ alto.

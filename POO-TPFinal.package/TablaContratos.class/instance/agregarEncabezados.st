@@ -22,7 +22,7 @@ agregarEncabezados
 			borderColor: Color black;
 			extent: anchoColumna @ 30;
 			hResizing: #spaceFill;
-			vResizing: #shrinkWrap.
+			vResizing: #spaceFill.
 		
 		texto := StringMorph new
 			contents: encabezado;
@@ -32,7 +32,7 @@ agregarEncabezados
 		
 		texto position: celda position + (5 @ 7).
 		celda addMorph: texto.
-		filaEncabezado addMorph: celda
+		filaEncabezado addMorphBack: celda
 	].
 	
 	contenedor addMorph: filaEncabezado.
