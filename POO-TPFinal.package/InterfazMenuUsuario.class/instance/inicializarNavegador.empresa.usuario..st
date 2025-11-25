@@ -1,34 +1,34 @@
 accessing
 inicializarNavegador: unNavegador empresa: unaEmpresa usuario: unUsuario
 
-	| contratos tablaM tablaG  datosContratos datosContratos2 tablaGNombre tablaMNombre tablaUsuario |
+	| contratos tablaM tablaG tablaGNombre tablaMNombre tablaUsuario contratosG contratosM datosContratosG datosContratosM |
+	
 	self navegador: unNavegador empresa: unaEmpresa.	
 	contratos := empresa obtenerContratosDeCliente: unUsuario .
-
+	"Creo dos tablas para contrato Guardamuebles uno con el nombre de la tabla y otra con las columnas de datos de Guardamuebles"
 	tablaGNombre := TablaContratos crearConEncabezados: #('Contratos Guardamuebles') ancho: 1400 	alto: 30.
 	tablaG := TablaContratos crearConEncabezados: ContratoGuardamuebles  obtenerEncabezadoGuardamueble 	ancho: 1400	alto: 30.
-	
+		"Creo dos tablas para contrato Mudanza uno con el nombre de la tabla y otra con las columnas de datos de Mudanza"
 	tablaMNombre := TablaContratos crearConEncabezados: #('Contratos Mudanzas') 	ancho: 1400	alto: 30.
 	tablaM := TablaContratos crearConEncabezados: ContratoMudanza   obtenerEncabezadoMudanza 	ancho: 1400	alto: 30.
+"Separo los contratos de Guardamuebles con los de Mudanza"
+contratosG := contratos select: [ :c | c esGuardamuebles ].
+contratosM:= contratos select: [ :c | c esMudanza ].
+"Obtengo los datos de cada tipo "
 
-datosContratos := contratos collect: [ :contrato |contrato obtenerInformacion ].
+datosContratosG := contratosG collect: [ :contrato | contrato obtenerInformacion  ].
+datosContratosM := contratosM collect: [ :contrato | contrato obtenerInformacion  ].
 
-datosContratos2 := contratos collect: [ :contrato |
-	OrderedCollection new
-		add: contrato obtenerId;
-		add: (contrato esActivo ifTrue: ['Activo'] ifFalse: ['Inactivo']);
-		add: 'datos valor';
-		add: 'prueba fecha' ;
-		add: 'prueba nombre' ;
-		yourself
-].
+
+
 
 
 tablaUsuario := TablaContratos crearConEncabezados: unUsuario obtenerDatosUsuario ancho: 1400 	alto: 30.
 
-			
-tablaM agregarFilas: datosContratos.
-tablaG agregarFilas: datosContratos2.
+"Agrego los datos de cada contrato a la tabla correspondiente"			
+tablaM agregarFilas: datosContratosM.
+tablaG agregarFilas: datosContratosG.
+
 self agregarMorphCentrado: tablaUsuario obtenerMorph conMargen:10.
 
 self agregarMorphCentrado: tablaGNombre obtenerMorph conMargen:10.

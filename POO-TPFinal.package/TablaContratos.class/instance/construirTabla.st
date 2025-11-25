@@ -9,9 +9,8 @@ construirTabla
 		extent: ancho @ alto;
 		layoutPolicy: TableLayout new;
 		listDirection: #bottomToTop;
-		wrapDirection: #topToBottom; 
 		cellInset: 0;
 		hResizing: #spaceFill;
-		vResizing: #spaceFill.
+		vResizing: #shrinkWrap.
 	
 	self agregarEncabezados.
