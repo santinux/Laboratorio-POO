@@ -1,14 +1,14 @@
 as yet unclassified
-validarUsuarioDNI: unDNI contrasegna: unaContrasegna
+validarUsuarioDNI: unCampoDNI contrasegna: unCampoContrasegna
 
 	| unNroDNI |
-	(unDNI text isNotEmpty) & (unaContrasegna text isNotEmpty)
+	unCampoDNI text isNotEmpty & unCampoContrasegna text isNotEmpty
 		ifTrue: [
-			unNroDNI := unDNI getText asNumber.
+			unNroDNI := unCampoDNI getText asNumber.
 			usuario := empresa obtenerClienteConDNI: unNroDNI.
 			usuario
 				ifNotNil: [
-					usuario contrasegna = unaContrasegna getText
+					usuario contrasegna = unCampoContrasegna getText asString
 						ifTrue: [
 							navegador agregarVentana: (InterfazMenuUsuario
 									 crearConNavegador: navegador

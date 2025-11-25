@@ -1,4 +1,4 @@
 accessing
 contrasegna
 
-	^ true
+	^ contrasegna 
