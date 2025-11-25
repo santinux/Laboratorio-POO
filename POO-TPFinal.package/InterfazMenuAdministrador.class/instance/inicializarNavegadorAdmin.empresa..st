@@ -1,7 +1,9 @@
 as yet unclassified
-mostrarListadoContratos
-	| contratosSemanal tablaM tablaG tablaGNombre tablaMNombre contratosG contratosM datosContratosG datosContratosM |
+inicializarNavegadorAdmin: unNavegador empresa: unaEmpresa 
 
+	| contratosSemanal tablaM tablaG tablaGNombre tablaMNombre contratosG contratosM datosContratosG datosContratosM |
+	
+	self navegador: unNavegador empresa: unaEmpresa.	
 	"Obtengo los contratos semanales"
 	contratosSemanal := empresa generarListadoContratoSemanal .
 	

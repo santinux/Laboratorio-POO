@@ -30,7 +30,7 @@ initialize
 		              color: Color orange;
 		              mouseAction: [
 			              navegador agregarVentana:
-					              (InterfazMenuAdministrador new empresa: empresa) ].
+					              (InterfazMenuAdministrador new navegador:self  empresa: empresa) ].
 	self agregarMorphCentrado: botonAdmin conMargen: 40.
 
 	empresa ifNotNil: [

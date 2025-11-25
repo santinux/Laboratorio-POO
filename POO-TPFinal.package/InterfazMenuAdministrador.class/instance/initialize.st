@@ -12,7 +12,7 @@ initialize
 	botonListado := BotonAccion new
 		                label: 'Listar contratos semanales';
 		                color: Color orange;
-		                mouseAction: [ "mostrarListadoContratos" ].
+		                mouseAction: [ self mostrarListadoContratos ].
 	self agregarMorphCentrado: botonListado conMargen: 20.
 
 	botonServicio := BotonAccion new

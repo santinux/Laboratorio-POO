@@ -427,6 +427,12 @@ crearConBaseDeDatos
 			 listaElementos: ''
 			 fechaInicio: (Date today addDays: -10)
 			 fechaFin: (Date today addDays: 10)).
+			unaEmpresaMudanzas registrarContrato: (ContratoGuardamuebles
+			 crearConCliente: (colClientes at: 1)
+			 servicio: (colServicios at: 2)
+			 listaElementos: ''
+			 fechaInicio: (Date today addDays: -20)
+			 fechaFin: (Date today addDays: 20)).
 	unaEmpresaMudanzas registrarContrato: (ContratoGuardamuebles
 			 crearConCliente: (colClientes at: 2)
 			 servicio: (colServicios at: 2)
@@ -441,6 +447,12 @@ crearConBaseDeDatos
 			 fechaFin: (Date today addDays: 30)).
 	"Contratos de mudanzas locales"
 	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+			 crearConCliente: (colClientes at: 1)
+			 servicio: (colServicios at: 4)
+			 listaElementos: ''
+			 fechaAcordada: (Date today addDays: -40)
+			 horaAcordada: '08:00:00' asTime).
+				unaEmpresaMudanzas registrarContrato: (ContratoMudanza
 			 crearConCliente: (colClientes at: 1)
 			 servicio: (colServicios at: 4)
 			 listaElementos: ''
