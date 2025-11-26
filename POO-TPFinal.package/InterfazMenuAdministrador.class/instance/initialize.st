@@ -13,10 +13,17 @@ initialize
 		                label: 'Listar contratos semanales';
 		                color: Color orange;
 		                mouseAction: [ self mostrarListadoContratos ].
-	self agregarMorphCentrado: botonListado conMargen: 20.
+	self agregarMorphCentrado: botonListado   conMargen: 20.
+
+	botonListarServicio := BotonAccion new
+		                label: 'Listar Servicios';
+		                color: Color orange;
+		                mouseAction: [ self mostrarServicios ].
+	self agregarMorphCentrado: botonListarServicio  conMargen: 20.
 
 	botonServicio := BotonAccion new
 		                 label: 'Agregar servicio';
 		                 color: Color orange;
-		                 mouseAction: [ navegador agregarVentana: (self agregarServicio1)  ].
+		                 mouseAction: [ self agregarServicio 
+			                  ].
 	self agregarMorphCentrado: botonServicio conMargen: 20

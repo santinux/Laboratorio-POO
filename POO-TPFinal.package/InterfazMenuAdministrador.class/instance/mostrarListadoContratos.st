@@ -1,6 +1,7 @@
 as yet unclassified
 mostrarListadoContratos
 	| contratosSemanal tablaM tablaG tablaGNombre tablaMNombre contratosG contratosM datosContratosG datosContratosM botonCancelarServicio |
+	super initialize .
 self removeAllMorphs.
 	"Obtengo los contratos semanales"
 	contratosSemanal := empresa generarListadoContratoSemanal .

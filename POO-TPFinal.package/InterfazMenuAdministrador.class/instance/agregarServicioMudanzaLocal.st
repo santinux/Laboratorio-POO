@@ -3,7 +3,8 @@ agregarServicioMudanzaLocal
 	"Limpia la interfaz actual y muestra el formulario para agregar servicio"
 	
 	| unTipo unNombre unaDescripcion unValorBase botonGuardarServicio botonCancelarServicio |
-self removeAllMorphs.
+	super initialize.
+	self removeAllMorphs.
 	self titulo: 'Agregar Nuevo Servicio'.
 	
 	unTipo := RubTextFieldMorph new

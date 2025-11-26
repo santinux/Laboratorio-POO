@@ -3,7 +3,8 @@ agregarServicio
 	"Limpia la interfaz actual y muestra el formulario para agregar servicio"
 	
 	|botonServicioGuardamuebles botonServicioMudanzaLocal botonServicioMudanzaNacional botonServicioMudanzaInternacional botonCancelarServicio |
-self removeAllMorphs.
+	super initialize.
+	self removeAllMorphs.
 	self titulo: 'Agregar Nuevo Servicio'.
 
 	botonServicioGuardamuebles := BotonAccion new

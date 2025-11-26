@@ -1,16 +1,14 @@
 as yet unclassified
-guardarServicioConTipo: campoTipo nombre: campoNombre descripcion: campoDescripcion valor: campoValorBase 
+guardarServicioConNombre: campoNombre descripcion: campoDescripcion valor: campoValorBase 
 	"Guarda el nuevo servicio en la empresa"
 	
-	| tipo nombre descripcion valor colServicios |
+	| nombre descripcion valor colServicios |
 	
+	nombre := campoNombre getText .
+	descripcion := campoDescripcion getText .
+	valor := campoValorBase getText asNumber.
 	
-	tipo := campoTipo getText trimBoth.
-	nombre := campoNombre getText trimBoth.
-	descripcion := campoDescripcion getText trimBoth.
-	valor := campoValorBase .
-	
-	(tipo isEmpty or: [ nombre isEmpty or: [ descripcion isEmpty or: [ valor isNil ]]]) ifTrue: [
+	( nombre isEmpty or: [ descripcion isEmpty or: [ valor isNil ]]) ifTrue: [
 		^ self inform: 'Todos los campos son obligatorios' ].
 	
 	"Aquí agregas la lógica para crear el servicio en la empresa"
