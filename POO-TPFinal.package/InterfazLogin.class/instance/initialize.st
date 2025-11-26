@@ -18,12 +18,12 @@ initialize
 	botonIniciarSesion := BotonAccion new label: 'Iniciar Sesión'.
 	"Hacer la búsqueda del usuario en la DB y obtener su instancia"
 	"Con la instancia de usuario moverse a la interfaz de menú de usuario"
-	botonIniciarSesion mouseAction: [ self validarUsuarioDNI: campoDNI contrasegna: campoContrasegna ].
+	botonIniciarSesion mouseAction: [
+		self validarUsuarioDNI: campoDNI contrasegna: campoContrasegna ].
 	self agregarMorphCentrado: botonIniciarSesion conMargen: 20.
 
 	botonRegistrarse := BotonAccion new label: 'Registrarse'.
-	botonRegistrarse mouseAction: [
-		self inform: 'Botón Registrarse presionado' ].
+	botonRegistrarse mouseAction: [ navegador agregarVentana: (InterfazRegistroUsuario new navegador: self empresa: empresa )].
 	self agregarMorphCentrado: botonRegistrarse conMargen: 10.
 
 	botonAdmin := BotonAccion new

@@ -5,7 +5,18 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"campoNombre",
+		"campoApellido",
+		"campoDNI",
+		"campoContrasegna",
+		"campoTelefonoContacto",
+		"campoCalle",
+		"campoNumero",
+		"campoPiso",
+		"campoDpto",
+		"campoBarrio"
+	],
 	"name" : "InterfazRegistroUsuario",
 	"type" : "normal"
 }
