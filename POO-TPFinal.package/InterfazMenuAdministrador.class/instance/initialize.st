@@ -18,7 +18,5 @@ initialize
 	botonServicio := BotonAccion new
 		                 label: 'Agregar servicio';
 		                 color: Color orange;
-		                 mouseAction: [ " navegador agregarVentana:
-					              (InterfazMenuAdministrador new empresa: empresa)"
-			                  ].
+		                 mouseAction: [ navegador agregarVentana: (self agregarServicio1)  ].
 	self agregarMorphCentrado: botonServicio conMargen: 20
