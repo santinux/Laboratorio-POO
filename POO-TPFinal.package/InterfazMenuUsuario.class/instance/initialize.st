@@ -1,11 +1,6 @@
-accessing
-inicializarNavegador: unNavegador empresa: unaEmpresa usuario: unUsuario
+initialization
+initialize
 	super initialize.
-	navegador :=unNavegador .
-	empresa:=unaEmpresa .
-	usuario :=unUsuario .
-
-
 	self titulo: 'Menú usuario'.
 
 	botonListaContratos := BotonAccion new
@@ -40,7 +35,3 @@ inicializarNavegador: unNavegador empresa: unaEmpresa usuario: unUsuario
 		                 mouseAction: [ self renovarContratoGuardamuebles].
 	self agregarMorphCentrado: botonRenovarContrato conMargen: 20.
 	
-	botonVolver := BotonAccion new 
-		label: 'Volver';
-		color: Color orange.
-	botonVolver mouseAction: [ self initialize ].

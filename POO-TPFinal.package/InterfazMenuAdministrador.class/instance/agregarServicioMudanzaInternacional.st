@@ -1,16 +1,11 @@
-as yet unclassified
+Propios
 agregarServicioMudanzaInternacional
 	"Limpia la interfaz actual y muestra el formulario para agregar servicio"
 	
-	| unTipo unNombre unaDescripcion unValorBase botonGuardarServicio botonCancelarServicio |
+	|unNombre unaDescripcion unValorBase botonGuardarServicio botonCancelarServicio |
  	super initialize.
 	self removeAllMorphs.
-	self titulo: 'Agregar Nuevo Servicio'.
-	
-	unTipo := RubTextFieldMorph new
-		extent: 275 @ 20;
-		ghostText: 'Tipo (Guardamuebles, MudanzaLocal, etc)'.
-	self agregarMorphCentrado: unTipo conMargen: 40.
+	self titulo: 'Agregar Nuevo Servicio Mudanza Internacional'.
 	
 	unNombre := RubTextFieldMorph new
 		extent: 275 @ 20;
@@ -29,7 +24,7 @@ unValorBase := RubTextFieldMorph new
 	
 	botonGuardarServicio := BotonAccion new label: 'Guardar Servicio'.
 	botonGuardarServicio mouseAction: [ 
-	self guardarServicioConTipo: unTipo  nombre: unNombre   descripcion: unaDescripcion  valor: unValorBase   
+	self guardarServicioConNombre: unNombre   descripcion: unaDescripcion  valor: unValorBase     
 ].
 	self agregarMorphCentrado: botonGuardarServicio conMargen: 20.
 	

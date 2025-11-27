@@ -1,10 +1,11 @@
-Propios
-mostrarListadoContratos
-	| contratosSemanal tablaM tablaG tablaGNombre tablaMNombre contratosG contratosM datosContratosG datosContratosM botonCancelarServicio |
-	super initialize .
-self removeAllMorphs.
-	"Obtengo los contratos semanales"
-	contratosSemanal := empresa generarListadoContratoSemanal .
+as yet unclassified
+verListaContratos
+	| contratos tablaM tablaG tablaGNombre tablaMNombre tablaUsuario contratosG contratosM datosContratosG datosContratosM botonVolver  |
+		super initialize .
+      self removeAllMorphs.
+	
+	"Obtengo los contratos del cliente"
+	contratos := empresa obtenerContratosDeCliente: usuario .
 	
 	"Creo dos tablas para contrato Guardamuebles uno con el nombre de la tabla y otra con las columnas de datos de Guardamuebles"
 	tablaGNombre := TablaContratos crearConEncabezados: #('Contratos Guardamuebles') ancho: 1400 	alto: 30.
@@ -15,12 +16,13 @@ self removeAllMorphs.
 	tablaM := TablaContratos crearConEncabezados: ContratoMudanza   obtenerEncabezadoMudanza 	ancho: 1400	alto: 30.
 			
 	"Separo los contratos de Guardamuebles con los de Mudanza"
-	contratosG := contratosSemanal select: [ :c | c esGuardamuebles ].
-	contratosM:= contratosSemanal select: [ :c | c esMudanza ].
+	contratosG := contratos select: [ :c | c esGuardamuebles ].
+	contratosM:= contratos select: [ :c | c esMudanza ].
 	
 	"Obtengo los datos de cada tipo "
 	datosContratosG := contratosG collect: [ :contrato | contrato obtenerInformacion  ].
 	datosContratosM := contratosM collect: [ :contrato | contrato obtenerInformacion  ].
+	tablaUsuario := TablaContratos crearConEncabezados: usuario obtenerDatosUsuario ancho: 1400 	alto: 30.
 
 	"Agrego los datos de cada contrato a la tabla correspondiente"			
 	tablaM agregarFilas: datosContratosM.
@@ -28,14 +30,16 @@ self removeAllMorphs.
 	
 	"Abrir la tabla"
 
+	self agregarMorphCentrado: tablaUsuario obtenerMorph conMargen:10.
+
 	self agregarMorphCentrado: tablaGNombre obtenerMorph conMargen:10.
 	self agregarMorphCentrado: tablaG obtenerMorph conMargen:10.
 
 	self agregarMorphCentrado: tablaMNombre obtenerMorph conMargen:10.
 	self agregarMorphCentrado: tablaM obtenerMorph conMargen:10.
 	
-	botonCancelarServicio := BotonAccion new 
+		botonVolver := BotonAccion new 
 		label: 'Volver';
 		color: Color orange.
-	botonCancelarServicio mouseAction: [ self initialize ].
-	self agregarMorphCentrado: botonCancelarServicio conMargen: 10.
+	botonVolver mouseAction: [ self initialize ].
+	self agregarMorphCentrado: botonVolver conMargen: 10.

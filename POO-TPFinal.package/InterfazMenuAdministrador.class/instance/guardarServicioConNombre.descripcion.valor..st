@@ -1,4 +1,4 @@
-as yet unclassified
+Propios
 guardarServicioConNombre: campoNombre descripcion: campoDescripcion valor: campoValorBase 
 	"Guarda el nuevo servicio en la empresa"
 	
