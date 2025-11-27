@@ -7,4 +7,4 @@ initialize
 		borderColor: Color black;
 		borderWidth: 2;
 		useRoundedCorners.
-	self extent: 740 @ 380
+	self extent: 1400 @ 380

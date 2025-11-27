@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 	self setLabel: 'Navegador Mudanzas NQN'.
-	self extent: 750 @ 450.
+	self extent: 1425 @ 1000.
 	
 	self inicializarPilaNavegacion.
 	self inicializarBarraNavegacion.
