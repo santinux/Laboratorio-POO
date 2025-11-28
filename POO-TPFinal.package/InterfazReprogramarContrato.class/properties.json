@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "Interfaz",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tablaG",
+		"tablaGNombre",
+		"contratosG",
+		"datosContratosG",
+		"contratos",
+		"tablaMNombre",
+		"tablaM",
+		"contratosM",
+		"datosContratosM",
+		"tablaUsuario"
+	],
+	"name" : "InterfazReprogramarContrato",
+	"type" : "normal"
+}

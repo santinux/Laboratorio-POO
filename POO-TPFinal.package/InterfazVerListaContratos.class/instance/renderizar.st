@@ -1,8 +1,7 @@
-as yet unclassified
-verListaContratos
-	| contratos tablaM tablaG tablaGNombre tablaMNombre tablaUsuario contratosG contratosM datosContratosG datosContratosM botonVolver  |
-		super initialize .
-      self removeAllMorphs.
+initialization
+renderizar 
+	super initialize .
+     self removeAllMorphs.
 	
 	"Obtengo los contratos del cliente"
 	contratos := empresa obtenerContratosDeCliente: usuario .
@@ -37,9 +36,3 @@ verListaContratos
 
 	self agregarMorphCentrado: tablaMNombre obtenerMorph conMargen:10.
 	self agregarMorphCentrado: tablaM obtenerMorph conMargen:10.
-	
-		botonVolver := BotonAccion new 
-		label: 'Volver';
-		color: Color orange.
-	botonVolver mouseAction: [ self initialize ].
-	self agregarMorphCentrado: botonVolver conMargen: 10.

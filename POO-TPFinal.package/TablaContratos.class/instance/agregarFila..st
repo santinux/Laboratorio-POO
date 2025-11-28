@@ -38,5 +38,6 @@ agregarFila: unaColeccionDatos
 	].
 	alto:=alto +27.
 	contenedor extent: ancho @ alto.
+	contenedor layoutChanged.
 	filas add: fila.
 	contenedor addMorph: fila. 

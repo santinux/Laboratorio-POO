@@ -1,11 +1,15 @@
 as yet unclassified
 obtenerInformacionCompleta
-
-    | informacion fechasR |
+    | informacion ultimaFechaR |
     informacion := self obtenerInformacion.
-	fechasR := renovaciones joinUsing: ', '.
+	ultimaFechaR := renovaciones joinUsing: ', '.
+	
+	ultimaFechaR  := renovaciones isEmpty 
+    ifFalse: [renovaciones last]
+    ifTrue: [''].
+	
     informacion
         add: listaElementos  asString;
-        add: fechasR  asString.
+        add: ultimaFechaR  asString.
 
     ^ informacion

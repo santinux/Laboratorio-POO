@@ -5,7 +5,7 @@ reprogramarContrato: unIdContrato nuevaFecha: unaNuevaFecha nuevaHora: unaNuevaH
 	encontrado := contratos
 		              detect: [ :unContrato |
 		              unContrato esContrato: unIdContrato ]
-		              ifNone: [ nil ].
+		              ifNone: [ nil].
 	encontrado ifNotNil: [
 		(encontrado esActivo and: [ encontrado esMudanza ]) ifTrue: [
 			encontrado

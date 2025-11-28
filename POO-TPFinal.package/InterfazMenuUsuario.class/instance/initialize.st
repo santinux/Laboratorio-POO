@@ -6,7 +6,10 @@ initialize
 	botonListaContratos := BotonAccion new
 		                label: 'Listar contratos ';
 		                color: Color orange;
-		                mouseAction: [ self verListaContratos ].
+		                mouseAction: [ navegador agregarVentana: (InterfazVerListaContratos  
+									 crearConNavegador: navegador
+									 empresa: empresa
+									 usuario: usuario) ].
 	self agregarMorphCentrado: botonListaContratos   conMargen: 20.
 	
 
@@ -32,6 +35,9 @@ initialize
 	botonRenovarContrato := BotonAccion new
 		                 label: 'Renovar Contrato Guardamuebles';
 		                 color: Color orange;
-		                 mouseAction: [ self renovarContratoGuardamuebles].
+		                 mouseAction: [ navegador agregarVentana: (InterfazRenovarContratoGuardamuebles 
+									 crearConNavegador: navegador
+									 empresa: empresa
+									 usuario: usuario)].
 	self agregarMorphCentrado: botonRenovarContrato conMargen: 20.
 	

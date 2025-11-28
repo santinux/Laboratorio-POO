@@ -4,4 +4,6 @@ renovar: unaFechaFin listaElementos: unaListaElementos
 
 	fechaFin := unaFechaFin.
 	renovaciones add: Date today.
-	listaElementos + unaListaElementos asString.
+	listaElementos :=listaElementos , (unaListaElementos asString).
+	
+	

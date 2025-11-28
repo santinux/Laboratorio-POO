@@ -1,6 +1,6 @@
-as yet unclassified
-renovarContratoGuardamuebles
-| tablaG tablaGNombre tablaUsuario contratosG datosContratosG botonVolver idContrato unContrato botonBuscarContrato |
+initialization
+renderizar
+|tablaUsuario idContrato unaFecha unaListaElementos botonGuardarReprogramacion |
 		super initialize .
       self removeAllMorphs.
 		
@@ -31,30 +31,26 @@ renovarContratoGuardamuebles
 		extent: 275 @ 20;
 		ghostText: 'Ingrese la Id del Contrato'.
 	self agregarMorphCentrado: idContrato  conMargen: 10.
+	self titulo: 'Renovar Contrato'.
 	
-	botonBuscarContrato  := BotonAccion new label: 'Buscar Contrato'.
-		botonBuscarContrato mouseAction: [ 
-			|idTexto|
+	unaFecha  := RubTextFieldMorph new
+		extent: 275 @ 20;
+		ghostText: 'Nueva Fecha dd/mm/aa'.
+	self agregarMorphCentrado: unaFecha conMargen: 10.
+	
+	unaListaElementos := RubTextFieldMorph new
+		extent: 275 @ 20;
+		ghostText: 'Elementos a agregar'.
+	self agregarMorphCentrado: unaListaElementos conMargen: 10.
+
+
+	botonGuardarReprogramacion  := BotonAccion new label: 'Guardar Reprogramacion'.
+	botonGuardarReprogramacion mouseAction: [ 
+		|idTexto textoFecha nuevaFecha listaElementos|
 			idTexto :=idContrato getText asNumber .
-			
-	unContrato := contratosG  
-    detect: [:contrato | contrato esContrato: idTexto ]
-    ifNone: [nil].
-
-	"Verifica si el contrato es nulo"	
-	unContrato ifNotNil: [ self renovarContratoGuardamueblesEncontrado: unContrato ].
-		
-		 ] .           
-	self agregarMorphCentrado: botonBuscarContrato conMargen: 10.
-
-
-	
-	"//////////////////////////////////////////"
-	
-	
-	
-		botonVolver := BotonAccion new 
-		label: 'Volver';
-		color: Color orange.
-	botonVolver mouseAction: [ self initialize ].
-	self agregarMorphCentrado: botonVolver conMargen: 10.
+			textoFecha := unaFecha getText.
+			nuevaFecha := Date fromString:textoFecha.
+			listaElementos := unaListaElementos getText.
+	empresa  renovarContrato: idTexto fechaFin: nuevaFecha listaElementos: listaElementos    
+].
+	self agregarMorphCentrado: botonGuardarReprogramacion conMargen: 10. 	
