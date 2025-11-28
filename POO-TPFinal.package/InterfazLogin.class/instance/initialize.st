@@ -2,7 +2,6 @@ initialization
 initialize
 
 	super initialize.
-
 	self titulo: 'Mudanzas-NQN Login'.
 
 	campoDNI := RubTextFieldMorph new
@@ -23,7 +22,9 @@ initialize
 	self agregarMorphCentrado: botonIniciarSesion conMargen: 20.
 
 	botonRegistrarse := BotonAccion new label: 'Registrarse'.
-	botonRegistrarse mouseAction: [ navegador agregarVentana: (InterfazRegistroUsuario new navegador: self empresa: empresa )].
+	botonRegistrarse mouseAction: [
+		navegador agregarVentana:
+			(InterfazRegistroUsuario new navegador: self empresa: empresa) ].
 	self agregarMorphCentrado: botonRegistrarse conMargen: 10.
 
 	botonAdmin := BotonAccion new

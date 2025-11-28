@@ -15,7 +15,8 @@
 		"campoNumero",
 		"campoPiso",
 		"campoDpto",
-		"campoBarrio"
+		"campoBarrio",
+		"botonRegistrarme"
 	],
 	"name" : "InterfazRegistroUsuario",
 	"type" : "normal"
