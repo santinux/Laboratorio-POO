@@ -5,7 +5,7 @@ initialize
 
 	botonListaContratos := BotonAccion new
 		                label: 'Listar contratos ';
-		                color: Color orange;
+		                color: Color green ;
 		                mouseAction: [ navegador agregarVentana: (InterfazVerListaContratos  
 									 crearConNavegador: navegador
 									 empresa: empresa
@@ -15,26 +15,26 @@ initialize
 
 	botonRegistrarContrato := BotonAccion new
 		                label: 'Registrar Contrato';
-		                color: Color orange;
+		                color: Color green;
 		                mouseAction: [ self registrarContrato ].
 	self agregarMorphCentrado: botonRegistrarContrato  conMargen: 20.
 
 	botonCancelarContratos := BotonAccion new
 		                 label: 'Cancelar Contrato';
-		                 color: Color orange;
+		                 color: Color green;
 		                 mouseAction: [ self cancelarContrato].
 	self agregarMorphCentrado: botonCancelarContratos conMargen: 20.
 	
 
 	botonReprogramarContrato := BotonAccion new
 		                 label: 'Reprogramar Contrato Mudanza';
-		                 color: Color orange;
+		                 color: Color green;
 		                 mouseAction: [ self reprogramarContrato ].
 	self agregarMorphCentrado: botonReprogramarContrato conMargen: 20.
 	
 	botonRenovarContrato := BotonAccion new
 		                 label: 'Renovar Contrato Guardamuebles';
-		                 color: Color orange;
+		                 color: Color green;
 		                 mouseAction: [ navegador agregarVentana: (InterfazRenovarContratoGuardamuebles 
 									 crearConNavegador: navegador
 									 empresa: empresa

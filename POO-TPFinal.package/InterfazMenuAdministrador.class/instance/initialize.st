@@ -1,6 +1,5 @@
 initialization
 initialize
-
 	super initialize.
 	self titulo: 'Menú Administrador'.
 
@@ -12,7 +11,9 @@ initialize
 	botonListado := BotonAccion new
 		                label: 'Listar contratos semanales';
 		                color: Color orange;
-		                mouseAction: [ self mostrarListadoContratos ].
+		                mouseAction: [navegador agregarVentana: (InterfazListarContratoSemanales  
+									 crearConNavegador: navegador
+									 empresa: empresa) ].
 	self agregarMorphCentrado: botonListado   conMargen: 20.
 
 	botonListarServicio := BotonAccion new

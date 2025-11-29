@@ -1,6 +1,5 @@
-Propios
-mostrarListadoContratos
-	| contratosSemanal tablaM tablaG tablaGNombre tablaMNombre contratosG contratosM datosContratosG datosContratosM botonCancelarServicio |
+initialization
+renderizar
 	super initialize .
 	self removeAllMorphs.
 	"Obtengo los contratos semanales"
@@ -34,8 +33,3 @@ mostrarListadoContratos
 	self agregarMorphCentrado: tablaMNombre obtenerMorph conMargen:10.
 	self agregarMorphCentrado: tablaM obtenerMorph conMargen:10.
 	
-	botonCancelarServicio := BotonAccion new 
-		label: 'Volver';
-		color: Color orange.
-	botonCancelarServicio mouseAction: [ self initialize ].
-	self agregarMorphCentrado: botonCancelarServicio conMargen: 10.
