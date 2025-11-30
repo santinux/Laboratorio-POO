@@ -22,7 +22,10 @@ initialize
 	botonCancelarContratos := BotonAccion new
 		                 label: 'Cancelar Contrato';
 		                 color: Color green;
-		                 mouseAction: [ self cancelarContrato].
+		                 mouseAction: [ navegador agregarVentana: (InterfazCancelarContrato  
+									 crearConNavegador: navegador
+									 empresa: empresa
+									 usuario: usuario)].
 	self agregarMorphCentrado: botonCancelarContratos conMargen: 20.
 	
 

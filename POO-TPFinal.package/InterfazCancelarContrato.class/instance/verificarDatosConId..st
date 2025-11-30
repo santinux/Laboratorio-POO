@@ -1,18 +1,19 @@
 as yet unclassified
-verificarId: textoId
+verificarDatosConId: idContrato 
 	"Verifica que el ID sea un número válido"
-	
-	| numeroId |
-	textoId isEmpty ifTrue: [
+	"idContrato unaNuevaFecha unaNuevaHora esUrgente w"
+	| numeroId respuesta |
+	respuesta :=true.
+	idContrato ifNil: [
 		self inform: 'El ID del contrato es obligatorio'.
-		^ nil
+		^ false
 	].
 	
-	[numeroId := textoId asNumber.
+	[numeroId := idContrato getText asNumber.
 	numeroId > 0 ifFalse: [self error: 'ID inválido']]
 		on: Error do: [:ex | 
 			self inform: 'El ID debe ser un número válido'.
-			^ nil
+			^ false
 		].
 	
-	^ numeroId
+^respuesta 

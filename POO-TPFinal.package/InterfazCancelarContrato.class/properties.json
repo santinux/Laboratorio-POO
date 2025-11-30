@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "Interfaz",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contratos",
+		"tablaMNombre",
+		"tablaM",
+		"contratosM",
+		"datosContratosM",
+		"tablaUsuario",
+		"tablaGNombre",
+		"tablaG",
+		"contratosG",
+		"datosContratosG"
+	],
+	"name" : "InterfazCancelarContrato",
+	"type" : "normal"
+}
