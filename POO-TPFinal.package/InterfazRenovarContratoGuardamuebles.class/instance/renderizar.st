@@ -1,9 +1,9 @@
 initialization
 renderizar
-|tablaUsuario idContrato unaFecha unaListaElementos botonGuardarReprogramacion respuesta |
+|tablaUsuario idContrato unaFecha unaListaElementos botonGuardarReprogramacion |
 		super initialize .
       self removeAllMorphs.
-		respuesta:=''.
+		
 	"Creo dos tablas para contrato Guardamuebles uno con el nombre de la tabla y otra con las columnas de datos de Guardamuebles"
 	tablaGNombre := TablaContratos crearConEncabezados: #('Contratos Guardamuebles') ancho: 1400 	alto: 30.
 	tablaG := TablaContratos crearConEncabezados: ContratoGuardamuebles  obtenerEncabezadoGuardamuebleCompleto 	ancho: 1400	alto: 30.
@@ -27,12 +27,12 @@ renderizar
 	
 	"///////////////////////////////////////////////"
 	"Obtenemos el contrato a travez de la ID"
-	self titulo: 'Renovar Contrato'.
+		self titulo: 'Renovar Contrato'.
 	idContrato   := RubTextFieldMorph new
 		extent: 275 @ 20;
 		ghostText: 'Ingrese la Id del Contrato'.
 	self agregarMorphCentrado: idContrato  conMargen: 10.
-	
+
 	
 	unaFecha  := RubTextFieldMorph new
 		extent: 275 @ 20;
@@ -46,13 +46,12 @@ renderizar
 
 
 	botonGuardarReprogramacion  := BotonAccion new label: 'Guardar Renovacion'.
-	botonGuardarReprogramacion mouseAction: [ 
+	botonGuardarReprogramacion mouseAction: [
+		(self verificarDatosConId: idContrato conNuevaFecha:unaFecha) ifTrue: [ 
 		|idTexto textoFecha nuevaFecha listaElementos|
 			idTexto :=idContrato getText asNumber .
 			textoFecha := unaFecha getText.
 			nuevaFecha := Date fromString:textoFecha.
 			listaElementos := unaListaElementos getText.
-	self inform:(empresa  renovarContratoDeUsuario2:usuario conId: idTexto fechaFin: nuevaFecha listaElementos: listaElementos)    
-].
-	self agregarMorphCentrado: botonGuardarReprogramacion conMargen: 10. 
-		
+	self inform:(empresa  renovarContratoDeUsuario:usuario conId: idTexto fechaFin: nuevaFecha listaElementos: listaElementos)]].
+	self agregarMorphCentrado: botonGuardarReprogramacion conMargen: 10. 	

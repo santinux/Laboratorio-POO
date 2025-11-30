@@ -446,81 +446,81 @@ crearConBaseDeDatos
 			 fechaInicio: (Date today addDays: -30)
 			 fechaFin: (Date today addDays: 30)).
 	"Contratos de mudanzas locales"
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaLocal
 			 crearConCliente: (colClientes at: 1)
 			 servicio: (colServicios at: 4)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -40)
 			 horaAcordada: '08:00:00' asTime).
-				unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+				unaEmpresaMudanzas registrarContrato: (ContratoMudanzaLocal
 			 crearConCliente: (colClientes at: 1)
 			 servicio: (colServicios at: 4)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -40)
 			 horaAcordada: '08:00:00' asTime).
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaLocal
 			 crearConCliente: (colClientes at: 4)
 			 servicio: (colServicios at: 4)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -40)
 			 horaAcordada: '08:00:00' asTime).
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaLocal
 			 crearConCliente: (colClientes at: 5)
 			 servicio: (colServicios at: 5)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -50)
 			 horaAcordada: '09:00:00' asTime).
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaLocal
 			 crearConCliente: (colClientes at: 6)
 			 servicio: (colServicios at: 6)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -60)
 			 horaAcordada: '10:00:00' asTime).
 	"Contratos de mudanzas nacionales"
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaNacional
 			 crearConCliente: (colClientes at: 7)
 			 servicio: (colServicios at: 7)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -70)
 			 horaAcordada: '11:00:00' asTime).
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaNacional
 			 crearConCliente: (colClientes at: 8)
 			 servicio: (colServicios at: 8)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -80)
 			 horaAcordada: '12:00:00' asTime).
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaNacional
 			 crearConCliente: (colClientes at: 9)
 			 servicio: (colServicios at: 9)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -90)
 			 horaAcordada: '13:00:00' asTime).
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaNacional
 			 crearConCliente: (colClientes at: 10)
 			 servicio: (colServicios at: 10)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -100)
 			 horaAcordada: '14:00:00' asTime).
 	"Contratos de mudanzas internacionales"
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaInternacional
 			 crearConCliente: (colClientes at: 11)
 			 servicio: (colServicios at: 11)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -110)
 			 horaAcordada: '15:00:00' asTime).
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaInternacional
 			 crearConCliente: (colClientes at: 12)
 			 servicio: (colServicios at: 12)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -120)
 			 horaAcordada: '16:00:00' asTime).
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaInternacional
 			 crearConCliente: (colClientes at: 13)
 			 servicio: (colServicios at: 13)
 			 listaElementos: ''
 			 fechaAcordada: (Date today addDays: -130)
 			 horaAcordada: '17:00:00' asTime).
-	unaEmpresaMudanzas registrarContrato: (ContratoMudanza
+	unaEmpresaMudanzas registrarContrato: (ContratoMudanzaInternacional
 			 crearConCliente: (colClientes at: 14)
 			 servicio: (colServicios at: 14)
 			 listaElementos: ''

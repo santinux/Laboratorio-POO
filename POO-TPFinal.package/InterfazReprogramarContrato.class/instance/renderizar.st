@@ -1,10 +1,10 @@
 initialization
 renderizar
-|idContrato unaNuevaFecha unaNuevaHora botonGuardarReprogramacion esUrgente idTexto  |
+|botonGuardarReprogramacion idContrato unaNuevaFecha unaNuevaHora esUrgente |
 		super initialize .
       self removeAllMorphs.
-		
-	"Creo tablas para contrato Mudanza uno con el nombre de la tabla y otra con las columnas de datos de Mudanza"
+		"asdasd"
+	"Creo tablas para contrato Mudanza uno con el nombre de la tabla y otra con las columnas de datos de Mudanza s"
 	tablaMNombre := TablaContratos crearConEncabezados: #('Contratos Mudanza') ancho: 1400 	alto: 30.
 	tablaM := TablaContratos crearConEncabezados: ContratoMudanza   obtenerEncabezadoMudanza  	ancho: 1400	alto: 30.
 			
@@ -52,7 +52,8 @@ renderizar
 
 	botonGuardarReprogramacion  := BotonAccion new label: 'Guardar Reprogramacion'.
 	botonGuardarReprogramacion mouseAction: [ 
-		|nuevaFecha nuevaHora urgente textoUrgente |
+		(self verificarDatosConId: idContrato conNuevaFecha:unaNuevaFecha conNuevaHora:unaNuevaHora conUrgencia:esUrgente) ifTrue: [  
+		|nuevaFecha nuevaHora urgente textoUrgente idTexto |
 			idTexto :=idContrato getText asNumber .
 			"comvertir de texto a fecha dd/mm/yy"
 			nuevaFecha := Date fromString:unaNuevaFecha  getText.
@@ -62,5 +63,5 @@ renderizar
 				"Convertir booleano desde string 'true'/'false'"
 				textoUrgente := (esUrgente getText).
 				urgente := textoUrgente = 'true'.
-	self inform:(empresa  reprogramarContratoDeUsuario2:usuario conId: idTexto  nuevaFecha: nuevaFecha nuevaHora: nuevaHora urgente: urgente)].
+	self inform:(empresa  reprogramarContratoDeUsuario:usuario conId: idTexto  nuevaFecha: nuevaFecha nuevaHora: nuevaHora urgente: urgente)]].
 	self agregarMorphCentrado: botonGuardarReprogramacion conMargen: 10. 	
