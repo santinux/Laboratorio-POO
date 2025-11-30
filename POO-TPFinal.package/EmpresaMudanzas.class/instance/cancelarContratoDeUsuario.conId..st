@@ -1,5 +1,5 @@
 as yet unclassified
-cancelarContrato: unIdContrato
+cancelarContratoDeUsuario:unUsuario conId: unIdContrato
 
 	| encontrado respuesta |
 	encontrado := contratos

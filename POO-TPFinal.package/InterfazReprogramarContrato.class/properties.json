@@ -6,10 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"tablaG",
-		"tablaGNombre",
-		"contratosG",
-		"datosContratosG",
 		"contratos",
 		"tablaMNombre",
 		"tablaM",

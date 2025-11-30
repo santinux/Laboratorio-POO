@@ -1,6 +1,6 @@
 initialization
-renderizar
-|idContrato unaNuevaFecha unaNuevaHora botonGuardarReprogramacion esUrgente idTexto  |
+renderizar1
+|botonGuardarReprogramacion|
 		super initialize .
       self removeAllMorphs.
 		
@@ -62,5 +62,5 @@ renderizar
 				"Convertir booleano desde string 'true'/'false'"
 				textoUrgente := (esUrgente getText).
 				urgente := textoUrgente = 'true'.
-	self inform:(empresa  reprogramarContratoDeUsuario2:usuario conId: idTexto  nuevaFecha: nuevaFecha nuevaHora: nuevaHora urgente: urgente)].
+	self inform:(empresa  reprogramarContratoDeUsuario:usuario conId: idTexto  nuevaFecha: nuevaFecha nuevaHora: nuevaHora urgente: urgente)].
 	self agregarMorphCentrado: botonGuardarReprogramacion conMargen: 10. 	

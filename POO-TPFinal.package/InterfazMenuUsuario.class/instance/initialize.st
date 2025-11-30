@@ -29,7 +29,10 @@ initialize
 	botonReprogramarContrato := BotonAccion new
 		                 label: 'Reprogramar Contrato Mudanza';
 		                 color: Color green;
-		                 mouseAction: [ self reprogramarContrato ].
+		                 mouseAction: [ navegador agregarVentana: (InterfazReprogramarContrato  
+									 crearConNavegador: navegador
+									 empresa: empresa
+									 usuario: usuario)].
 	self agregarMorphCentrado: botonReprogramarContrato conMargen: 20.
 	
 	botonRenovarContrato := BotonAccion new

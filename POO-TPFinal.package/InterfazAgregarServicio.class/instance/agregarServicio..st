@@ -1,5 +1,5 @@
 Propios
-agregarServicioGuardamuebles1
+agregarServicio:unaClaseServicio
 	"Limpia la interfaz actual y muestra el formulario para agregar servicio"
 	
 	| unNombre unaDescripcion unValorBase botonGuardarServicio |
@@ -22,12 +22,14 @@ unValorBase := RubTextFieldMorph new
 		ghostText: 'Valor base (ej: 50000)'.
 	self agregarMorphCentrado: unValorBase conMargen: 10.
 	
-	self agregarServicioMudanzaLocal .
-	
 	botonGuardarServicio := BotonAccion new label: 'Guardar Servicio'.
 	botonGuardarServicio mouseAction: [ 
 	self guardarServicioConNombre: unNombre   descripcion: unaDescripcion  valor: unValorBase   
 ].
 	self agregarMorphCentrado: botonGuardarServicio conMargen: 20.
 	
+	botonCancelarServicio := BotonAccion new 
+		label: 'Volver';
+		color: Color orange.
+	botonCancelarServicio mouseAction: [ self initialize ].
 	self agregarMorphCentrado: botonCancelarServicio conMargen: 10.
