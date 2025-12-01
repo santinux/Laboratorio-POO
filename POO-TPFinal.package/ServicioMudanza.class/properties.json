@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Servicio",
+	"category" : "POO-TPFinal-Modelo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"adicionalEmbalaje",
+		"adicionalAltura",
+		"trabajoEnAltura",
+		"capacidad"
+	],
+	"name" : "ServicioMudanza",
+	"type" : "normal"
+}

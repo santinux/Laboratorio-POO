@@ -7,9 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"titulo",
+		"navegador",
 		"empresa",
-		"usuario",
-		"navegador"
+		"usuario"
 	],
 	"name" : "Interfaz",
 	"type" : "normal"

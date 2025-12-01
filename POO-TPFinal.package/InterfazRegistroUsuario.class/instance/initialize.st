@@ -58,5 +58,5 @@ initialize
 	self agregarMorphCentrado: campoBarrio conMargen: 10.
 
 	botonRegistrarme := BotonAccion new label: 'Registrarme'.
-	botonRegistrarme mouseAction: [ self validarNuevoUsuario: '' ].
+	botonRegistrarme mouseAction: [ self validarNuevoUsuario ].
 	self agregarMorphCentrado: botonRegistrarme conMargen: 10

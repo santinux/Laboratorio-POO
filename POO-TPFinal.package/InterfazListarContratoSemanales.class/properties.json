@@ -1,0 +1,26 @@
+{
+	"commentStamp" : "",
+	"super" : "Interfaz",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"botonListado",
+		"botonServicio",
+		"test",
+		"botonListarServicio",
+		"contratosSemanal",
+		"tablaGNombre",
+		"tablaG",
+		"tablaMNombre",
+		"tablaM",
+		"contratosG",
+		"contratosM",
+		"datosContratosG",
+		"datosContratosM",
+		"botonCancelarServicio"
+	],
+	"name" : "InterfazListarContratoSemanales",
+	"type" : "normal"
+}

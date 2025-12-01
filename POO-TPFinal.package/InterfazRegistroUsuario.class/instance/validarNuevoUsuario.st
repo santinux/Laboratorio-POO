@@ -2,17 +2,18 @@ as yet unclassified
 validarNuevoUsuario
 	"Revisa que todos los campos estén completos y sean válidos"
 
-	| camposObligatorios campoVacio |
-	camposObligatorios := Array new
-		                      with: campoNombre;
-		                      with: campoApellido;
-		                      with: campoDNI;
-		                      with: campoContrasegna;
-		                      with: campoTelefonoContacto;
-		                      with: campoCalle;
-		                      with: campoNumero;
-		                      with: campoBarrio.
+	| camposObligatorios |
+	camposObligatorios := OrderedCollection new
+		                      add: campoNombre;
+		                      add: campoApellido;
+		                      add: campoDNI;
+		                      add: campoContrasegna;
+		                      add: campoTelefonoContacto;
+		                      add: campoCalle;
+		                      add: campoNumero;
+		                      add: campoBarrio;
+		                      yourself.
 
-	campoVacio := camposObligatorios
-		              detect: [ :campo | campo text isEmpty ]
-		              ifNone: [ nil ]
+	(camposObligatorios allSatisfy: [ :campo | campo text isNotEmpty ])
+		ifTrue: [ self inform: 'TODO' ]
+		ifFalse: [ self inform: 'Debe completar los campos obligatorios' ]

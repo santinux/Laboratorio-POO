@@ -8,7 +8,7 @@
 	"instvars" : [
 		"botonListado",
 		"botonServicio",
-		"test"
+		"botonListarServicio"
 	],
 	"name" : "InterfazMenuAdministrador",
 	"type" : "normal"

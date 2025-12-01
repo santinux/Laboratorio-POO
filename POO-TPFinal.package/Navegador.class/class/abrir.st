@@ -1,3 +1,4 @@
 instance creation
 abrir
-    ^self new openInWorld
+
+	^ self new openInWorld

@@ -1,6 +1,6 @@
 initialization
 inicializarContenedorVentana
-	"Añadimos TableLayout para que el contenido interno se redimensione."
+	"Crea un contenedor como ScrollPane para poder moverse por ventanas sobredimensionadas."
 
 	"contenedorVentana := PanelMorph new
 		                     color: Color lightGray;
@@ -14,6 +14,7 @@ inicializarContenedorVentana
 	contenedorVentana := ScrollPane new
 		                     color: Color gray;
 		                     yourself.
+		
 	contenedorVentana scroller
 		layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;

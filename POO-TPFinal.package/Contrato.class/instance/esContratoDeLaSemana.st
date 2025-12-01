@@ -1,8 +1,8 @@
 as yet unclassified
 esContratoDeLaSemana
-	|resultado diferencia|
 
+	| resultado diferencia |
 	diferencia := (Date today - fechaFirma) asDays abs.
-	resultado := (diferencia <= 7).
+	resultado := diferencia <= 7.
 
-	^ resultado.
+	^ resultado 

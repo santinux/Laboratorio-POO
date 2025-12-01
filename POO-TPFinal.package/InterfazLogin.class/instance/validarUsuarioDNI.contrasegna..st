@@ -10,11 +10,11 @@ validarUsuarioDNI: unCampoDNI contrasegna: unCampoContrasegna
 				ifNotNil: [
 					usuario contrasegna = unCampoContrasegna getText asString
 						ifTrue: [
-							navegador agregarVentana: (InterfazMenuUsuario
-									 crearConNavegador: navegador
-									 empresa: empresa
+							navegador agregarVentana: (InterfazMenuUsuario new
+									 navegador: navegador;
+									 empresa: empresa;
 									 usuario: usuario) ]
 						ifFalse: [ self inform: 'La contraseña es incorrecta' ] ]
 				ifNil: [
 				self inform: 'El DNI ingresado no corresponde a un cliente' ] ]
-		ifFalse: [ self inform: 'No ha ingresado un número de DNI' ]
+		ifFalse: [ self inform: ('Debe completar ambos campos', empresa nombre) ]

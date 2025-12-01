@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "ServicioMudanza",
+	"category" : "POO-TPFinal-Modelo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"desdeInterior",
+		"haciaInterior",
+		"mercaderiaFragil",
+		"adicionalFragil",
+		"distanciaAcordada",
+		"adicionalDistancia"
+	],
+	"name" : "ServicioMudanzaNacional",
+	"type" : "normal"
+}

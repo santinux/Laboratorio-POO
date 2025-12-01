@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Interfaz",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tablaG",
+		"tablaGNombre",
+		"contratosG",
+		"datosContratosG"
+	],
+	"name" : "InterfazRenovarContratoGuardamuebles",
+	"type" : "normal"
+}

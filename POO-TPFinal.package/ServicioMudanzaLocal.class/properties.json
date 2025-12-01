@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ServicioMudanza",
+	"category" : "POO-TPFinal-Modelo",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"incluyeCarga",
+		"incluyeDescarga",
+		"distanciaMaxima"
+	],
+	"name" : "ServicioMudanzaLocal",
+	"type" : "normal"
+}
