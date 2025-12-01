@@ -13,5 +13,5 @@ initialize
 	self addMorph: contenedorVentana frame: (0 @ 0.075 corner: 1 @ 1).
 	"Primer ventana para el login"
 	self agregarVentana: (InterfazLogin new
-			 navegador: self
+			 navegador: self;
 			 empresa: EmpresaMudanzas crearConBaseDeDatos)
