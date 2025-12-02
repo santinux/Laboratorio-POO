@@ -7,18 +7,17 @@ construirInterfaz
 			                       navegador agregarVentana:
 					                       (InterfazVerListaContratos new
 						                        navegador: navegador;
-						                        empresa: empresa
-						                        usuario: usuario) ].
+						                        empresa: empresa usuario: usuario) ].
 	self agregarMorphCentrado: botonListaContratos conMargen: 20.
 
 
 	botonRegistrarContrato := BotonAccion new
 		                          label: 'Registrar Contrato';
-		                          mouseAction: [ "navegador agregarVentana:
+		                          mouseAction: [ navegador agregarVentana:
 					                          (InterfazAgregarContrato
-						                           crearConNavegador: navegador
+						                           new navegador: navegador;
 						                           empresa: empresa
-						                           usuario: usuario)"
+						                           usuario: usuario)
 			                           ].
 	self agregarMorphCentrado: botonRegistrarContrato conMargen: 20.
 

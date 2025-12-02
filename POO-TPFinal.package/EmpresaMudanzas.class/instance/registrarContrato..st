@@ -1,5 +1,7 @@
 as yet unclassified
 registrarContrato: unContrato
 
-	unContrato setId: (self ultimoId asNumber + 1).
-	contratos add: unContrato
+	unContrato setId: self ultimoId asNumber + 1.
+	contratos add: unContrato.
+	self changed.
+	^ 'Contrato agregado'

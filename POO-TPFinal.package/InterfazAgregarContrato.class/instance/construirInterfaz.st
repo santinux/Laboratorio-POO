@@ -1,7 +1,6 @@
 as yet unclassified
 construirInterfaz
 
-	"super initialize."
 	botonContratoGuardamuebles := BotonAccion new
 		                              label:
 			                              'Agregar Contrato Guardamuebles';
