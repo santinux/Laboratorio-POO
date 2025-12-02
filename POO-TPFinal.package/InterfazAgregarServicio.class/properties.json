@@ -6,20 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"botonListado",
-		"botonServicio",
-		"test",
-		"botonListarServicio",
-		"contratosSemanal",
-		"tablaGNombre",
-		"tablaG",
-		"tablaMNombre",
-		"tablaM",
-		"contratosG",
-		"contratosM",
-		"datosContratosG",
-		"datosContratosM",
-		"botonCancelarServicio"
+		"coleccionDatos",
+		"botonServicioGuardamuebles",
+		"botonServicioMudanzaLocal",
+		"botonServicioMudanzaNacional",
+		"botonServicioMudanzaInternacional"
 	],
 	"name" : "InterfazAgregarServicio",
 	"type" : "normal"

@@ -5,7 +5,13 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"botonListaContratos",
+		"botonRegistrarContrato",
+		"botonCancelarContratos",
+		"botonReprogramarContrato",
+		"botonRenovarContrato"
+	],
 	"name" : "InterfazMenuUsuario",
 	"type" : "normal"
 }

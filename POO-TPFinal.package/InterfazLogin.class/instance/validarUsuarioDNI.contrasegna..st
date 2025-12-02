@@ -17,4 +17,5 @@ validarUsuarioDNI: unCampoDNI contrasegna: unCampoContrasegna
 						ifFalse: [ self inform: 'La contraseña es incorrecta' ] ]
 				ifNil: [
 				self inform: 'El DNI ingresado no corresponde a un cliente' ] ]
-		ifFalse: [ self inform: ('Debe completar ambos campos', empresa nombre) ]
+		ifFalse: [
+		self inform: 'Debe completar ambos campos']

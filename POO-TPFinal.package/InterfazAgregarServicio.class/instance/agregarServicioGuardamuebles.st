@@ -1,35 +1,44 @@
 as yet unclassified
 agregarServicioGuardamuebles
-	"Limpia la interfaz actual y muestra el formulario para agregar servicio"
-	
-	| unNombre unaDescripcion unValorBase botonGuardarServicio |
-	super initialize.
-	self removeAllMorphs.
-	self titulo: 'Agregar Nuevo Servicio Guardamuebles'.
-	
-	unNombre := RubTextFieldMorph new
-		extent: 275 @ 20;
-		ghostText: 'Nombre del servicio'.
-	self agregarMorphCentrado: unNombre conMargen: 10.
-	
-	unaDescripcion := RubTextFieldMorph new
-		extent: 275 @ 20;
-		ghostText: 'Descripción del servicio'.
-	self agregarMorphCentrado: unaDescripcion conMargen: 10.
-	
-unValorBase := RubTextFieldMorph new
-		extent: 275 @ 20;
-		ghostText: 'Valor base (ej: 50000)'.
-	self agregarMorphCentrado: unValorBase conMargen: 10.
-	
-	botonGuardarServicio := BotonAccion new label: 'Guardar Servicio'.
-	botonGuardarServicio mouseAction: [ 
-	self guardarServicioConNombre: unNombre   descripcion: unaDescripcion  valor: unValorBase   
-].
-	self agregarMorphCentrado: botonGuardarServicio conMargen: 20.
-	
-	botonCancelarServicio := BotonAccion new 
-		label: 'Volver';
-		color: Color orange.
-	botonCancelarServicio mouseAction: [ self initialize ].
-	self agregarMorphCentrado: botonCancelarServicio conMargen: 10.
+	"muestra el formulario para agregar los datos especirficos de servicio guardamuebles"
+
+	| unTamaño unAislamiento unGuardaLlave botonGuardar |
+	self titulo: 'Datos Guardamuebles'.
+
+	unTamaño := RubTextFieldMorph new
+		            extent: 275 @ 20;
+		            ghostText: 'Tamaño Disponible'.
+	self agregarMorphCentrado: unTamaño conMargen: 10.
+
+	unAislamiento := RubTextFieldMorph new
+		                 extent: 275 @ 20;
+		                 ghostText: 'Tiene aislamiento true/false'.
+	self agregarMorphCentrado: unAislamiento conMargen: 10.
+
+	unGuardaLlave := RubTextFieldMorph new
+		                 extent: 275 @ 20;
+		                 ghostText: 'Guarda llave true/false'.
+	self agregarMorphCentrado: unGuardaLlave conMargen: 10.
+
+	botonGuardar := BotonAccion new label: 'Guardar'.
+	botonGuardar mouseAction: [
+		(self
+			 verificarDatosGuardamueble: unTamaño
+			 conDescripcion: unAislamiento
+			 conValor: unGuardaLlave) ifTrue: [
+			| tieneAislamiento tieneGuardaLlave tamaño nuevoServicio |
+			tamaño := unTamaño getText.
+			"Convertir booleano desde string 'true'/'false'"
+			tieneAislamiento := unAislamiento getText = 'true'.
+			"Convertir booleano desde string 'true'/'false'"
+			tieneGuardaLlave := unGuardaLlave getText = 'true'.
+			nuevoServicio := ServicioGuardamuebles
+				                 crearConDescripcion: (coleccionDatos at: 2)
+				                 nombre: (coleccionDatos at: 1)
+				                 valorBase: (coleccionDatos at: 3)
+				                 tamagnoDisponible: tamaño
+				                 aislamientoTermico: tieneAislamiento
+				                 guardaDeLlave: tieneGuardaLlave.
+			self inform: (empresa agregarServicio: nuevoServicio).
+			navegador volver ] ].
+	self agregarMorphCentrado: botonGuardar conMargen: 20

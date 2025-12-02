@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Interfaz",
+	"category" : "POO-TPFinal-Vista",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"listaElementos",
+		"serviciosTipo",
+		"servicio",
+		"botonContratoGuardamuebles",
+		"botonContratoMudanzaLocal",
+		"botonContratoMudanzaNacional",
+		"botonContratoMudanzaInternacional"
+	],
+	"name" : "InterfazAgregarContrato",
+	"type" : "normal"
+}

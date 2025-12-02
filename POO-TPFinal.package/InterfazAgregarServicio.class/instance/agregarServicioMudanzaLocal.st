@@ -1,37 +1,49 @@
 as yet unclassified
 agregarServicioMudanzaLocal
-	"Limpia la interfaz actual y muestra el formulario para agregar servicio"
 
-	| unNombre unaDescripcion unValorBase botonGuardarServicio |
-	super initialize.
-	self removeAllMorphs.
-	self titulo: 'Agregar Nuevo Servicio Mudanza Local'.
+	| unIncluyeCarga unIncluyeDescarga unaDistanciaMaxima botonGuardar |
+	self titulo: 'Datos Mudanza Local'.
 
-	unNombre := RubTextFieldMorph new
-		            extent: 275 @ 20;
-		            ghostText: 'Nombre del servicio'.
-	self agregarMorphCentrado: unNombre conMargen: 10.
-
-	unaDescripcion := RubTextFieldMorph new
+	unIncluyeCarga := RubTextFieldMorph new
 		                  extent: 275 @ 20;
-		                  ghostText: 'Descripción del servicio'.
-	self agregarMorphCentrado: unaDescripcion conMargen: 10.
+		                  ghostText: '¿Incluye carga? true/false'.
+	self agregarMorphCentrado: unIncluyeCarga conMargen: 10.
 
-	unValorBase := RubTextFieldMorph new
-		               extent: 275 @ 20;
-		               ghostText: 'Valor base (ej: 50000)'.
-	self agregarMorphCentrado: unValorBase conMargen: 10.
 
-	botonGuardarServicio := BotonAccion new label: 'Guardar Servicio'.
-	botonGuardarServicio mouseAction: [
-		self
-			guardarServicioConNombre: unNombre
-			descripcion: unaDescripcion
-			valor: unValorBase ].
-	self agregarMorphCentrado: botonGuardarServicio conMargen: 20.
+	unIncluyeDescarga := RubTextFieldMorph new
+		                     extent: 275 @ 20;
+		                     ghostText: '¿Incluye descarga? true/false'.
+	self agregarMorphCentrado: unIncluyeDescarga conMargen: 10.
 
-	botonCancelarServicio := BotonAccion new
-		                         label: 'Volver';
-		                         color: Color orange.
-	botonCancelarServicio mouseAction: [ self initialize ].
-	self agregarMorphCentrado: botonCancelarServicio conMargen: 10
+
+	unaDistanciaMaxima := RubTextFieldMorph new
+		                      extent: 275 @ 20;
+		                      ghostText: 'Distancia máxima en km (ej: 50)'.
+	self agregarMorphCentrado: unaDistanciaMaxima conMargen: 10.
+
+	botonGuardar := BotonAccion new label: 'Guardar'.
+	botonGuardar mouseAction: [
+		(self
+			 verificarDatosMudanzaLocal: unIncluyeCarga
+			 conIncluyeDescarga: unIncluyeDescarga
+			 conDistanciaMaxima: unaDistanciaMaxima) ifTrue: [
+			| incluyeCarga incluyeDescarga distanciaMaxima unServicio |
+			incluyeCarga := unIncluyeCarga getText = 'true'.
+			incluyeDescarga := unIncluyeDescarga getText = 'true'.
+			distanciaMaxima := unaDistanciaMaxima getText asNumber.
+			"1:nombre 2:descripcion 3:valorBase 4:trabajo en altura 5:adicional altura 6:adicional embalaje 7:capacidad"
+			unServicio := ServicioMudanzaLocal
+				              crearConDescripcion: (coleccionDatos at: 2)
+				              nombre: (coleccionDatos at: 1)
+				              valorBase: (coleccionDatos at: 3)
+				              trabajoEnAltura: (coleccionDatos at: 4)
+				              adicionalAltura: (coleccionDatos at: 5)
+				              adicionalEmbalaje: (coleccionDatos at: 6)
+				              capacidad: (coleccionDatos at: 7)
+				              incluyeCarga: incluyeCarga
+				              incluyeDescarga: incluyeDescarga
+				              distanciaMaxima: distanciaMaxima.
+			self inform: (empresa agregarServicio: unServicio).
+			navegador volver ] ].
+
+	self agregarMorphCentrado: botonGuardar conMargen: 20

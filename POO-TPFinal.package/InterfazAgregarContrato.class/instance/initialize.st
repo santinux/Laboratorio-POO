@@ -2,4 +2,4 @@ initialization
 initialize
 
 	super initialize.
-	self titulo: 'Listado de Contratos Semanales'
+	self titulo: 'Agregar Contrato'
