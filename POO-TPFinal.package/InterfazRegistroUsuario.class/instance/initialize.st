@@ -2,14 +2,14 @@ initialization
 initialize
 
 	super initialize.
-	self titulo: 'Mudanzas-NQN Registro'.
+	self titulo: 'Registro Usuario'.
 
 	"Agregamos los campos y botones para el formulario de registro del usuario"
 
 	campoNombre := RubTextFieldMorph new
 		               extent: 275 @ 20;
 		               ghostText: 'Ingrese su nombre'.
-	self agregarMorphCentrado: campoNombre conMargen: 40.
+	self agregarMorphCentrado: campoNombre conMargen: 20.
 
 	campoApellido := RubTextFieldMorph new
 		                 extent: 275 @ 20;
@@ -44,7 +44,7 @@ initialize
 
 	campoPiso := RubTextFieldMorph new
 		             extent: 275 @ 20;
-		             ghostText: 'Ingrese su teléfono de contacto'.
+		             ghostText: 'Ingrese su número de piso'.
 	self agregarMorphCentrado: campoPiso conMargen: 10.
 
 	campoDpto := RubTextFieldMorph new
