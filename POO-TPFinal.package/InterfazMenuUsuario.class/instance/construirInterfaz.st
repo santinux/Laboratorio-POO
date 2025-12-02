@@ -13,21 +13,20 @@ construirInterfaz
 
 	botonRegistrarContrato := BotonAccion new
 		                          label: 'Registrar Contrato';
-		                          mouseAction: [ navegador agregarVentana:
-					                          (InterfazAgregarContrato
-						                           new navegador: navegador;
-						                           empresa: empresa
-						                           usuario: usuario)
-			                           ].
+		                          mouseAction: [
+			                          navegador agregarVentana:
+					                          (InterfazAgregarContrato new
+						                           navegador: navegador;
+						                           empresa: empresa usuario: usuario) ].
 	self agregarMorphCentrado: botonRegistrarContrato conMargen: 20.
 
 	botonCancelarContratos := BotonAccion new
 		                          label: 'Cancelar Contrato';
-		                          mouseAction: [ "navegador agregarVentana:
+		                          mouseAction: [ navegador agregarVentana:
 					                          (InterfazCancelarContrato
-						                           crearConNavegador: navegador
+						                           new navegador: navegador;
 						                           empresa: empresa
-						                           usuario: usuario)"
+						                           usuario: usuario)
 			                           ].
 	self agregarMorphCentrado: botonCancelarContratos conMargen: 20.
 
