@@ -1,4 +1,4 @@
 as yet unclassified
 obtenerEncabezado
 
-	^ #( 'ID' 'Estado' 'Valor' 'Fecha Firma' )
+	^ #( 'ID' 'Estado' 'Valor' 'Fecha Firma' 'Servicio' )
