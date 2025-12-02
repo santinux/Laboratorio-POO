@@ -7,7 +7,7 @@ construirInterfaz
 			                       navegador agregarVentana:
 					                       (InterfazVerListaContratos new
 						                        navegador: navegador;
-						                        empresa: empresa;
+						                        empresa: empresa
 						                        usuario: usuario) ].
 	self agregarMorphCentrado: botonListaContratos conMargen: 20.
 
