@@ -17,16 +17,21 @@ validarNuevoUsuario
 	(camposObligatorios allSatisfy: [ :campo | campo text isNotEmpty ])
 		ifTrue: [
 			self inform: (empresa registrarCliente: (Cliente
-					 crearConNombre: campoNombre text
-					 apellido: campoApellido text
-					 nroDNI: campoDNI text
-					 contrasegna: campoContrasegna text
-					 telefonoContacto: campoTelefonoContacto text
-					 direccion: (Direccion
-							  crearConCalle: campoCalle text
-							  numero: campoNumero text
-							  piso: (campoPiso ifNotNil: [ campoPiso text ] ifNil: [ '-' ])
-							  dpto: (campoDpto ifNotNil: [ campoDpto text ] ifNil: [ '-' ])
-							  barrio: campoBarrio text))).
-							]
+						  crearConNombre: campoNombre text asString
+						  apellido: campoApellido text asString
+						  nroDNI: campoDNI text asNumber
+						  contrasegna: campoContrasegna text asString
+						  telefonoContacto: campoTelefonoContacto text asNumber
+						  direccion: (Direccion
+								   crearConCalle: campoCalle text asString
+								   numero: campoNumero text
+								   piso:
+								   (campoPiso
+									    ifNotNil: [ campoPiso text asString ]
+									    ifNil: [ '-' ])
+								   dpto:
+								   (campoDpto
+									    ifNotNil: [ campoDpto text asString ]
+									    ifNil: [ '-' ])
+								   barrio: campoBarrio text asString))) ]
 		ifFalse: [ self inform: 'Debe completar los campos obligatorios' ]

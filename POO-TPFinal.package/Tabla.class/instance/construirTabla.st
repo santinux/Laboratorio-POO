@@ -9,7 +9,6 @@ construirTabla
 		              extent: ancho @ alto;
 		              layoutPolicy: TableLayout new;
 		              listDirection: #bottomToTop;
-		"listDirection: #topToBottom;"
 		              cellInset: 0;
 		              hResizing: #spaceFill;
 		              vResizing: #shrinkWrap.
