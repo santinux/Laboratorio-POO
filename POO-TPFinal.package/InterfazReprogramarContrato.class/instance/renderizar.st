@@ -5,15 +5,15 @@ renderizar
       self removeAllMorphs.
 		"asdasd"
 	"Creo tablas para contrato Mudanza uno con el nombre de la tabla y otra con las columnas de datos de Mudanza s"
-	tablaMNombre := TablaContratos crearConEncabezados: #('Contratos Mudanza') ancho: 1400 	alto: 30.
-	tablaM := TablaContratos crearConEncabezados: ContratoMudanza   obtenerEncabezadoMudanza  	ancho: 1400	alto: 30.
+	tablaMNombre := Tabla crearConEncabezados: #('Contratos Mudanza') ancho: 1400 	alto: 30.
+	tablaM := Tabla crearConEncabezados: ContratoMudanza   obtenerEncabezadoMudanza  	ancho: 1400	alto: 30.
 			
 	"Obtengo los contratos de Mudanza"
 	contratosM := (empresa obtenerContratosDeCliente: usuario) select: [ :c | c esMudanza ].
 	
 	"Obtengo los datos de cada tipo "
 	datosContratosM := contratosM collect: [ :contrato | contrato obtenerInformacion].
-	tablaUsuario := TablaContratos crearConEncabezados: usuario obtenerDatosUsuario ancho: 1400 	alto: 30.
+	tablaUsuario := Tabla crearConEncabezados: usuario obtenerDatosUsuario ancho: 1400 	alto: 30.
 
 	"Agrego los datos de cada contrato a la tabla correspondiente"	
 	tablaM agregarFilas: datosContratosM.
@@ -53,15 +53,13 @@ renderizar
 	botonGuardarReprogramacion  := BotonAccion new label: 'Guardar Reprogramacion'.
 	botonGuardarReprogramacion mouseAction: [ 
 		(self verificarDatosConId: idContrato conNuevaFecha:unaNuevaFecha conNuevaHora:unaNuevaHora conUrgencia:esUrgente) ifTrue: [  
-		|nuevaFecha nuevaHora urgente textoUrgente idTexto |
+		|nuevaFecha nuevaHora urgente idTexto |
 			idTexto :=idContrato getText asNumber .
 			"comvertir de texto a fecha dd/mm/yy"
 			nuevaFecha := Date fromString:unaNuevaFecha  getText.
 			"Comvertir a texto y luego a hora "
 			nuevaHora := Time fromString: unaNuevaHora  getText .
-			
-				"Convertir booleano desde string 'true'/'false'"
-				textoUrgente := (esUrgente getText).
-				urgente := textoUrgente = 'true'.
+			"Convertir booleano desde string 'true'/'false'"
+			urgente := (esUrgente getText) = 'true'.
 	self inform:(empresa  reprogramarContratoDeUsuario:usuario conId: idTexto  nuevaFecha: nuevaFecha nuevaHora: nuevaHora urgente: urgente)]].
 	self agregarMorphCentrado: botonGuardarReprogramacion conMargen: 10. 	

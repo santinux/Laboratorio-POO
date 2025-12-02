@@ -6,12 +6,12 @@ renderizar
 	contratosSemanal := empresa generarListadoContratoSemanal.
 	
 	"Creo dos tablas para contrato Guardamuebles uno con el nombre de la tabla y otra con las columnas de datos de Guardamuebles"
-	tablaGNombre := TablaContratos crearConEncabezados: #('Contratos Guardamuebles') ancho: 1400 	alto: 30.
-	tablaG := TablaContratos crearConEncabezados: ContratoGuardamuebles  obtenerEncabezadoGuardamueble 	ancho: 1400	alto: 30.
+	tablaGNombre := Tabla crearConEncabezados: #('Contratos Guardamuebles') ancho: 1400 	alto: 30.
+	tablaG := Tabla crearConEncabezados: ContratoGuardamuebles  obtenerEncabezadoGuardamueble 	ancho: 1400	alto: 30.
 			
 	"Creo dos tablas para contrato Mudanza uno con el nombre de la tabla y otra con las columnas de datos de Mudanza"
-	tablaMNombre := TablaContratos crearConEncabezados: #('Contratos Mudanzas') 	ancho: 1400	alto: 30.
-	tablaM := TablaContratos crearConEncabezados: ContratoMudanza   obtenerEncabezadoMudanza 	ancho: 1400	alto: 30.
+	tablaMNombre := Tabla crearConEncabezados: #('Contratos Mudanzas') 	ancho: 1400	alto: 30.
+	tablaM := Tabla crearConEncabezados: ContratoMudanza   obtenerEncabezadoMudanza 	ancho: 1400	alto: 30.
 			
 	"Separo los contratos de Guardamuebles con los de Mudanza"
 	contratosG := contratosSemanal select: [ :c | c esGuardamuebles ].

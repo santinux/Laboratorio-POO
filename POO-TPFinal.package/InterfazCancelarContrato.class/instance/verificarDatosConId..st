@@ -2,8 +2,7 @@ as yet unclassified
 verificarDatosConId: idContrato 
 	"Verifica que el ID sea un número válido"
 	"idContrato unaNuevaFecha unaNuevaHora esUrgente w"
-	| numeroId respuesta |
-	respuesta :=true.
+	| numeroId|
 	idContrato ifNil: [
 		self inform: 'El ID del contrato es obligatorio'.
 		^ false
@@ -16,4 +15,4 @@ verificarDatosConId: idContrato
 			^ false
 		].
 	
-^respuesta 
+^true 

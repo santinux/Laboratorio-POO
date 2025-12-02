@@ -16,7 +16,10 @@ initialize
 	botonRegistrarContrato := BotonAccion new
 		                label: 'Registrar Contrato';
 		                color: Color green;
-		                mouseAction: [ self registrarContrato ].
+		                mouseAction: [navegador agregarVentana: (InterfazAgregarContrato   
+									 crearConNavegador: navegador
+									 empresa: empresa
+									 usuario: usuario)].
 	self agregarMorphCentrado: botonRegistrarContrato  conMargen: 20.
 
 	botonCancelarContratos := BotonAccion new

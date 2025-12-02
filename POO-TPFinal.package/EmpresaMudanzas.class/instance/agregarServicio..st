@@ -1,6 +1,7 @@
 Propios
 agregarServicio:unServicio
-servicios add:unServicio.
-self changed .
+	unServicio  setId: (self ultimoIdServicio  asNumber + 1).
+	servicios add:unServicio.
+	self changed .
 	^ 'Servicio agregado' 
 

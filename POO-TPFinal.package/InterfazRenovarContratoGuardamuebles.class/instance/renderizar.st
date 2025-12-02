@@ -5,15 +5,15 @@ renderizar
       self removeAllMorphs.
 		
 	"Creo dos tablas para contrato Guardamuebles uno con el nombre de la tabla y otra con las columnas de datos de Guardamuebles"
-	tablaGNombre := TablaContratos crearConEncabezados: #('Contratos Guardamuebles') ancho: 1400 	alto: 30.
-	tablaG := TablaContratos crearConEncabezados: ContratoGuardamuebles  obtenerEncabezadoGuardamuebleCompleto 	ancho: 1400	alto: 30.
+	tablaGNombre := Tabla crearConEncabezados: #('Contratos Guardamuebles') ancho: 1400 	alto: 30.
+	tablaG := Tabla crearConEncabezados: ContratoGuardamuebles  obtenerEncabezadoGuardamuebleCompleto 	ancho: 1400	alto: 30.
 			
 	"Obtengo los contratos de Guardamuebles con los de Mudanza"
 	contratosG := (empresa obtenerContratosDeCliente: usuario) select: [ :c | c esGuardamuebles ].
 	
 	"Obtengo los datos de cada tipo "
 	datosContratosG := contratosG collect: [ :contrato | contrato obtenerInformacionCompleta].
-	tablaUsuario := TablaContratos crearConEncabezados: usuario obtenerDatosUsuario ancho: 1400 	alto: 30.
+	tablaUsuario := Tabla crearConEncabezados: usuario obtenerDatosUsuario ancho: 1400 	alto: 30.
 
 	"Agrego los datos de cada contrato a la tabla correspondiente"	
 	tablaG agregarFilas: datosContratosG.

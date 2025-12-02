@@ -25,7 +25,7 @@ initialize
 	botonServicio := BotonAccion new
 		                 label: 'Agregar servicio';
 		                 color: Color orange;
-		                 mouseAction: [navegador agregarVentana: (InterfazAgregarServicio1   
+		                 mouseAction: [navegador agregarVentana: (InterfazAgregarServicio   
 									 crearConNavegador: navegador
 									 empresa: empresa)  
 			                  ].

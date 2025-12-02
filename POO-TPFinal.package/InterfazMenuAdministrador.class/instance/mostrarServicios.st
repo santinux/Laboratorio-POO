@@ -2,13 +2,13 @@ Propios
 mostrarServicios
 	| servicios tablaS tablaServicio datosServicios botonCancelarServicio |
 	super initialize .
-self removeAllMorphs.
+	self removeAllMorphs.
 	"Obtengo los contratos semanales"
 	servicios := empresa getColServicio  .
 			
 	"Creo dos tablas para contrato Mudanza uno con el nombre de la tabla y otra con las columnas de datos de Mudanza"
-	tablaServicio := TablaContratos crearConEncabezados: #('Servicios') 	ancho: 1400	alto: 30.
-	tablaS := TablaContratos crearConEncabezados: #('Nombre' 'Descripcion' 'Valor Base') 	ancho: 1400	alto: 30.
+	tablaServicio := Tabla crearConEncabezados: #('Servicios') 	ancho: 1400	alto: 30.
+	tablaS := Tabla crearConEncabezados: #('Id' 'Nombre' 'Descripcion' 'Valor Base') 	ancho: 1400	alto: 30.
 
 	
 	"Obtengo los datos de cada tipo "

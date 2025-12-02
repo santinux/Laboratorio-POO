@@ -7,12 +7,12 @@ renderizar
 	contratos := empresa obtenerContratosDeCliente: usuario .
 	
 	"Creo dos tablas para contrato Guardamuebles uno con el nombre de la tabla y otra con las columnas de datos de Guardamuebles"
-	tablaGNombre := TablaContratos crearConEncabezados: #('Contratos Guardamuebles') ancho: 1400 	alto: 30.
-	tablaG := TablaContratos crearConEncabezados: ContratoGuardamuebles  obtenerEncabezadoGuardamueble 	ancho: 1400	alto: 30.
+	tablaGNombre := Tabla crearConEncabezados: #('Contratos Guardamuebles') ancho: 1400 	alto: 30.
+	tablaG := Tabla crearConEncabezados: ContratoGuardamuebles  obtenerEncabezadoGuardamueble 	ancho: 1400	alto: 30.
 			
 	"Creo dos tablas para contrato Mudanza uno con el nombre de la tabla y otra con las columnas de datos de Mudanza"
-	tablaMNombre := TablaContratos crearConEncabezados: #('Contratos Mudanzas') 	ancho: 1400	alto: 30.
-	tablaM := TablaContratos crearConEncabezados: ContratoMudanza   obtenerEncabezadoMudanza 	ancho: 1400	alto: 30.
+	tablaMNombre := Tabla crearConEncabezados: #('Contratos Mudanzas') 	ancho: 1400	alto: 30.
+	tablaM := Tabla crearConEncabezados: ContratoMudanza   obtenerEncabezadoMudanza 	ancho: 1400	alto: 30.
 			
 	"Separo los contratos de Guardamuebles con los de Mudanza"
 	contratosG := contratos select: [ :c | c esGuardamuebles ].
@@ -21,7 +21,7 @@ renderizar
 	"Obtengo los datos de cada tipo "
 	datosContratosG := contratosG collect: [ :contrato | contrato obtenerInformacion  ].
 	datosContratosM := contratosM collect: [ :contrato | contrato obtenerInformacion  ].
-	tablaUsuario := TablaContratos crearConEncabezados: usuario obtenerDatosUsuario ancho: 1400 	alto: 30.
+	tablaUsuario := Tabla crearConEncabezados: usuario obtenerDatosUsuario ancho: 1400 	alto: 30.
 
 	"Agrego los datos de cada contrato a la tabla correspondiente"			
 	tablaM agregarFilas: datosContratosM.

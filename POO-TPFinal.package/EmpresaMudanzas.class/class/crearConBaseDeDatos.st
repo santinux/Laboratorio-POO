@@ -1,7 +1,7 @@
 instance creation
 crearConBaseDeDatos
 
-	| unaEmpresaMudanzas direccionCompartida colClientes colServicios colContratos |
+	| unaEmpresaMudanzas direccionCompartida colClientes colServicios colContratos colServicios1  |
 	direccionCompartida := Direccion
 		                       crearConCalle: 'Av. Pres. Figueroa Alcorta'
 		                       numero: 7597
@@ -223,7 +223,7 @@ crearConBaseDeDatos
 		               yourself.
 
 	"Servicios de guardamuebles"
-	colServicios := OrderedCollection new
+	colServicios1 := OrderedCollection new
 		                add: (Guardamuebles
 				                 crearConDescripcion:
 					                 'El más económico de nuestros depósitos'
@@ -405,6 +405,7 @@ crearConBaseDeDatos
 										guardaDeLlave: true);"
 	"Empresa de Mudanzas"
 	colContratos := OrderedCollection new.
+	colServicios  := OrderedCollection new.
 	unaEmpresaMudanzas := self new.
 	unaEmpresaMudanzas
 		inicializarRazonSocial: 'MudanzasNQN'
@@ -419,9 +420,184 @@ crearConBaseDeDatos
 		servicios: colServicios
 		clientes: colClientes
 		contratos: colContratos.
+	"Agrego Servicios"
+	"Servicios de guardamuebles"
+		unaEmpresaMudanzas agregarServicio: (Guardamuebles
+			crearConDescripcion: 'El más económico de nuestros depósitos'
+			nombre: 'Guardamuebles Base'
+			valorBase: 10000
+			tamagnoDisponible: '10 metros cúbicos'
+			aislamientoTermico: false
+			guardaDeLlave: false).
 
+		unaEmpresaMudanzas agregarServicio: (Guardamuebles
+			crearConDescripcion: 'El depósito más solicitado'
+			nombre: 'Guardamuebles Estándar'
+			valorBase: 20000
+			tamagnoDisponible: '20 metros cúbicos'
+			aislamientoTermico: true
+			guardaDeLlave: true).
+
+		unaEmpresaMudanzas agregarServicio: (Guardamuebles
+			crearConDescripcion: 'El más grande de los depósitos'
+			nombre: 'Guardamuebles Premium'
+			valorBase: 30000
+			tamagnoDisponible: '30 metros cúbicos'
+			aislamientoTermico: true
+			guardaDeLlave: true).
+
+	"Servicios de mudanzas locales"
+		unaEmpresaMudanzas agregarServicio: (MudanzaLocal
+			crearConDescripcion: 'El más económico de los servicios de mudanza dentro de la ciudad'
+			nombre: 'Mudanza Base en Neuquén'
+			valorBase: 10000
+			trabajoEnAltura: false
+		adicionalAltura: 0
+			adicionalEmbalaje: 1000
+			capacidad: '10 metros cúbicos'
+		incluyeCarga: false
+			incluyeDescarga: false
+			distanciaMaxima: '10 kilómetros').
+
+		unaEmpresaMudanzas agregarServicio: (MudanzaLocal
+			crearConDescripcion: 'La más conveniente para un edificio en la ciudad'
+			nombre: 'Mudanza Estándar en Neuquén'
+			valorBase: 20000
+			trabajoEnAltura: true
+			adicionalAltura: 5000
+			adicionalEmbalaje: 2000
+			capacidad: '20 metros cúbicos'
+			incluyeCarga: true
+			incluyeDescarga: true
+		distanciaMaxima: '10 kilómetros').
+
+		unaEmpresaMudanzas agregarServicio: (MudanzaLocal
+			crearConDescripcion: 'Nuestro mejor servicio dentro de la ciudad'
+			nombre: 'Mudanza Premium en Neuquén'
+			valorBase: 30000
+			trabajoEnAltura: true
+			adicionalAltura: 5000
+			adicionalEmbalaje: 3000
+			capacidad: '20 metros cúbicos'
+			incluyeCarga: true
+			incluyeDescarga: true
+			distanciaMaxima: '10 kilómetros').
+
+	"Servicios de mudanzas nacionales"
+		unaEmpresaMudanzas agregarServicio: (MudanzaNacional
+			crearConDescripcion: 'El más económico de los servicios de mudanza desde el interior del país'
+			nombre: 'Mudanza Base Desde el Interior'
+			valorBase: 50000
+			trabajoEnAltura: false
+			adicionalAltura: 0
+			adicionalEmbalaje: 5000
+			capacidad: '60 metros cúbicos'
+			desdeInterior: true
+			haciaInterior: false
+			mercaderiaFragil: false
+			adicionalFragil: 0
+			distanciaAcordada: 1500
+			adicionalDistancia: 5000).
+
+		unaEmpresaMudanzas agregarServicio: (MudanzaNacional
+			crearConDescripcion: 'El mejor de los servicios de mudanza desde el interior del país'
+			nombre: 'Mudanza Premium Desde el Interior'
+			valorBase: 60000
+			trabajoEnAltura: true
+			adicionalAltura: 5000
+			adicionalEmbalaje: 5000
+			capacidad: '60 metros cúbicos'
+			desdeInterior: true
+			haciaInterior: false
+			mercaderiaFragil: true
+			adicionalFragil: 5000
+			distanciaAcordada: 1500
+			adicionalDistancia: 5000).
+
+		unaEmpresaMudanzas agregarServicio: (MudanzaNacional
+			crearConDescripcion: 'El más económico de los servicios de mudanza hacia el interior del país'
+			nombre: 'Mudanza Base Hacia el Interior'
+			valorBase: 50000
+			trabajoEnAltura: false
+			adicionalAltura: 0
+			adicionalEmbalaje: 5000
+			capacidad: '60 metros cúbicos'
+			desdeInterior: false
+			haciaInterior: true
+			mercaderiaFragil: false
+			adicionalFragil: 0
+			distanciaAcordada: 1500
+			adicionalDistancia: 5000).
+
+		unaEmpresaMudanzas agregarServicio: (MudanzaNacional
+			crearConDescripcion: 'El mejor de los servicios de mudanza hacia el interior del país'
+			nombre: 'Mudanza Premium Hacia el Interior'
+			valorBase: 50000
+			trabajoEnAltura: true
+			adicionalAltura: 5000
+			adicionalEmbalaje: 5000
+			capacidad: '60 metros cúbicos'
+			desdeInterior: false
+			haciaInterior: true
+			mercaderiaFragil: true
+			adicionalFragil: 5000
+			distanciaAcordada: 1500
+			adicionalDistancia: 5000).
+
+"Servicios de mudanzas internacionales"
+		unaEmpresaMudanzas agregarServicio: (MudanzaInternacional
+			crearConDescripcion: 'El más económico de los servicios de mudanza desde el extranjero'
+			nombre: 'Mudanza Base Desde el Extranjero'
+			valorBase: 100000
+			trabajoEnAltura: false
+			adicionalAltura: 0
+			adicionalEmbalaje: 7000
+			capacidad: '40 metros cúbicos'
+			adicionalAduana: 0
+			adicionalTransporte: 0
+			seguroInternacional: false).
+
+		unaEmpresaMudanzas agregarServicio: (MudanzaInternacional
+			crearConDescripcion: 'El mejor de los servicios de mudanza desde el extranjero'
+			nombre: 'Mudanza Premium Desde Extranjero'
+			valorBase: 150000
+			trabajoEnAltura: true
+			adicionalAltura: 5000
+			adicionalEmbalaje: 7000
+			capacidad: '80 metros cúbicos'
+			adicionalAduana: 0
+			adicionalTransporte: 0
+			seguroInternacional: true).
+
+		unaEmpresaMudanzas agregarServicio: (MudanzaInternacional
+			crearConDescripcion: 'El más económico de los servicios de mudanza hacia el extranjero'
+			nombre: 'Mudanza Base Hacia el Extranjero'
+			valorBase: 100000
+			trabajoEnAltura: false
+			adicionalAltura: 0
+			adicionalEmbalaje: 7000
+			capacidad: '40 metros cúbicos'
+			adicionalAduana: 0
+			adicionalTransporte: 0
+			seguroInternacional: false).
+
+		unaEmpresaMudanzas agregarServicio: (MudanzaInternacional
+			crearConDescripcion: 'El mejor de los servicios de mudanza hacia el extranjero'
+			nombre: 'Mudanza Premium Hacia Extranjero'
+			valorBase: 150000
+			trabajoEnAltura: true
+			adicionalAltura: 5000
+			adicionalEmbalaje: 7000
+			capacidad: '80 metros cúbicos'
+			adicionalAduana: 0
+			adicionalTransporte: 0
+			seguroInternacional: true).
+	
+	
+	
+	
 	"Contratos de guardamuebles"
-	unaEmpresaMudanzas registrarContrato: (ContratoGuardamuebles
+		unaEmpresaMudanzas registrarContrato: (ContratoGuardamuebles
 			 crearConCliente: (colClientes at: 1)
 			 servicio: (colServicios at: 1)
 			 listaElementos: ''
