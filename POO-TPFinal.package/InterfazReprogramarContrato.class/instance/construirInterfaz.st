@@ -2,10 +2,9 @@ as yet unclassified
 construirInterfaz
 
 	| botonGuardarReprogramacion idContrato unaNuevaFecha unaNuevaHora esUrgente |
-	super initialize.
 	self removeAllMorphs.
-	"asdasd"
-	"Creo tablas para contrato Mudanza uno con el nombre de la tabla y otra con las columnas de datos de Mudanza s"
+
+	"Creo tablas para contrato Mudanza uno con el nombre de la tabla y otra con las columnas de datos de Mudanzas"
 	tablaMNombre := Tabla
 		                crearConEncabezados: #( 'Contratos Mudanza' )
 		                ancho: 1400
