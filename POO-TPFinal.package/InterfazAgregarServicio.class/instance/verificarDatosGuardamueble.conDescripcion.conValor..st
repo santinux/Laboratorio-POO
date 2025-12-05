@@ -26,8 +26,8 @@ textoAislamiento := unAislamiento getText.
 	].
 	
 	
-	(textoAislamiento = 'true' or: [textoAislamiento = 'false']) ifFalse: [
-		self inform: 'El campo tiene aislamiento debe ser ''true'' o ''false'' '.
+	(textoAislamiento = 'si' or: [textoAislamiento = 'si']) ifFalse: [
+		self inform: 'El campo tiene aislamiento debe ser "si" o "no" '.
 		^ false
 	].
 "Verificar guarda llave"
@@ -39,8 +39,8 @@ textoGuardaLlave := unGuardaLlave getText.
 	].
 	
 	
-	(textoGuardaLlave = 'true' or: [textoGuardaLlave = 'false']) ifFalse: [
-		self inform: 'El campo tiene aislamiento debe ser ''true'' o ''false'' '.
+	(textoGuardaLlave = 'si' or: [textoGuardaLlave = 'no']) ifFalse: [
+		self inform: 'El campo tiene aislamiento debe ser "si" o "no"'.
 		^ false
 	].
 	

@@ -7,17 +7,17 @@ agregarServicioMudanzaNacional
 	"Campos booleanos"
 	unDesdeInterior := RubTextFieldMorph new
 		                   extent: 275 @ 20;
-		                   ghostText: 'Desde interior? true/false'.
+		                   ghostText: 'Desde interior? si/no'.
 	self agregarMorphCentrado: unDesdeInterior conMargen: 10.
 
 	unHaciaInterior := RubTextFieldMorph new
 		                   extent: 275 @ 20;
-		                   ghostText: 'Hacia interior? true/false'.
+		                   ghostText: 'Hacia interior? si/no'.
 	self agregarMorphCentrado: unHaciaInterior conMargen: 10.
 
 	unMercaderiaFragil := RubTextFieldMorph new
 		                      extent: 275 @ 20;
-		                      ghostText: 'Mercadería frágil? true/false'.
+		                      ghostText: 'Mercadería frágil? si/no'.
 	self agregarMorphCentrado: unMercaderiaFragil conMargen: 10.
 
 	"Campos numéricos"
@@ -48,9 +48,9 @@ agregarServicioMudanzaNacional
 			 conDistanciaAcordada: unDistanciaAcordada
 			 conAdicionalDistancia: unAdicionalDistancia) ifTrue: [
 			| desdeInterior haciaInterior mercaderiaFragil adicionalFragil distanciaAcordada adicionalDistancia unServicio |
-			desdeInterior := unDesdeInterior getText = 'true'.
-			haciaInterior := unHaciaInterior getText = 'true'.
-			mercaderiaFragil := unMercaderiaFragil getText = 'true'.
+			desdeInterior := unDesdeInterior getText = 'si'.
+			haciaInterior := unHaciaInterior getText = 'si'.
+			mercaderiaFragil := unMercaderiaFragil getText = 'si'.
 			adicionalFragil := unAdicionalFragil getText asNumber.
 			distanciaAcordada := unDistanciaAcordada getText asNumber.
 			adicionalDistancia := unAdicionalDistancia getText asNumber.

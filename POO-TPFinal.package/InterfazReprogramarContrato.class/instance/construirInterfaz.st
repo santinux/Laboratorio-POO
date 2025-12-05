@@ -56,7 +56,7 @@ construirInterfaz
 
 	esUrgente := RubTextFieldMorph new
 		             extent: 275 @ 20;
-		             ghostText: 'es urgente? true/false'.
+		             ghostText: 'es urgente? si/no'.
 	self agregarMorphCentrado: esUrgente conMargen: 10.
 
 	botonGuardarReprogramacion := BotonAccion new label:
@@ -73,8 +73,8 @@ construirInterfaz
 			nuevaFecha := Date fromString: unaNuevaFecha getText.
 			"Comvertir a texto y luego a hora "
 			nuevaHora := Time fromString: unaNuevaHora getText.
-			"Convertir booleano desde string 'true'/'false'"
-			urgente := esUrgente getText = 'true'.
+			"Compara desde string 'si'"
+			urgente := esUrgente getText = 'si'.
 			self inform: (empresa
 					 reprogramarContratoDeUsuario: usuario
 					 conId: idTexto

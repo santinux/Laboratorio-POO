@@ -7,7 +7,7 @@ agregarServicioMudanzaTipo: unTipo
 
 	unTrabajoEnAltura := RubTextFieldMorph new
 		                     extent: 275 @ 20;
-		                     ghostText: 'Es un trabajo en altura true/false'.
+		                     ghostText: 'Es un trabajo en altura si/no'.
 	self agregarMorphCentrado: unTrabajoEnAltura conMargen: 10.
 
 	unAdicionalAltura := RubTextFieldMorph new
@@ -34,7 +34,7 @@ agregarServicioMudanzaTipo: unTipo
 			 conAdicionalAltura: unAdicionalAltura
 			 conAdicionalEmbalaje: unAdicionalEmbalaje
 			 conCapacidad: unaCapacidad) ifTrue: [
-			coleccionDatos add: unTrabajoEnAltura getText = 'true'.
+			coleccionDatos add: unTrabajoEnAltura getText = 'si'.
 			coleccionDatos add: unAdicionalAltura getText asNumber.
 			coleccionDatos add: unAdicionalEmbalaje getText asNumber.
 			coleccionDatos add: unaCapacidad getText asNumber.

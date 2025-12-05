@@ -19,7 +19,7 @@ agregarServicioMudanzaInternacional
 	unSeguroInternacional := RubTextFieldMorph new
 		                         extent: 275 @ 20;
 		                         ghostText:
-			                         'Seguro internacional? true/false'.
+			                         'Seguro internacional? si/no'.
 	self agregarMorphCentrado: unSeguroInternacional conMargen: 10.
 
 	botonGuardar := BotonAccion new label: 'Guardar'.
@@ -31,7 +31,7 @@ agregarServicioMudanzaInternacional
 			| adicionalAduana adicionalTransporte seguroInternacional unServicio |
 			adicionalAduana := unAdicionalAduana getText asNumber.
 			adicionalTransporte := unAdicionalTransporte getText asNumber.
-			seguroInternacional := unSeguroInternacional getText = 'true'.
+			seguroInternacional := unSeguroInternacional getText = 'si'.
 
 			"1:nombre 2:descripcion 3:valorBase 4:trabajo en altura 5:adicional altura 6:adicional embalaje 7:capacidad"
 			unServicio := ServicioMudanzaInternacional

@@ -12,12 +12,12 @@ agregarServicioGuardamuebles
 
 	unAislamiento := RubTextFieldMorph new
 		                 extent: 275 @ 20;
-		                 ghostText: 'Tiene aislamiento true/false'.
+		                 ghostText: 'Tiene aislamiento si/no'.
 	self agregarMorphCentrado: unAislamiento conMargen: 10.
 
 	unGuardaLlave := RubTextFieldMorph new
 		                 extent: 275 @ 20;
-		                 ghostText: 'Guarda llave true/false'.
+		                 ghostText: 'Guarda llave si/no'.
 	self agregarMorphCentrado: unGuardaLlave conMargen: 10.
 
 	botonGuardar := BotonAccion new label: 'Guardar'.
@@ -29,9 +29,9 @@ agregarServicioGuardamuebles
 			| tieneAislamiento tieneGuardaLlave tamaño nuevoServicio |
 			tamaño := unTamaño getText.
 			"Convertir booleano desde string 'true'/'false'"
-			tieneAislamiento := unAislamiento getText = 'true'.
+			tieneAislamiento := unAislamiento getText = 'si'.
 			"Convertir booleano desde string 'true'/'false'"
-			tieneGuardaLlave := unGuardaLlave getText = 'true'.
+			tieneGuardaLlave := unGuardaLlave getText = 'si'.
 			nuevoServicio := ServicioGuardamuebles
 				                 crearConDescripcion: (coleccionDatos at: 2)
 				                 nombre: (coleccionDatos at: 1)

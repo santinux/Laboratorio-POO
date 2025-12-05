@@ -2,7 +2,7 @@ as yet unclassified
 verificarDatosConId: idContrato conNuevaFecha: unaNuevaFecha conNuevaHora: unaNuevaHora conUrgencia: esUrgente
 	"Verifica que el ID sea un número válido"
 
-	| numeroId textoFecha nuevaFecha textoHora nuevaHora textoUrgente textoLimpio respuesta |
+	| numeroId textoFecha nuevaFecha textoHora nuevaHora textoUrgente respuesta |
 	respuesta := true.
 	idContrato ifNil: [
 		self inform: 'El ID del contrato es obligatorio'.
@@ -46,10 +46,8 @@ verificarDatosConId: idContrato conNuevaFecha: unaNuevaFecha conNuevaHora: unaNu
 		self inform: 'El campo urgente es obligatorio'.
 		^ false ].
 
-	textoLimpio := textoUrgente.
-
-	(textoLimpio = 'true' or: [ textoLimpio = 'false' ]) ifFalse: [
-		self inform: 'El campo urgente debe ser ''true'' o ''false'''.
+	(textoUrgente = 'si' or: [ textoUrgente = 'no' ]) ifFalse: [
+		self inform: 'El campo urgente debe ser "si" o "no"'.
 		^ false ].
 
 	^ respuesta

@@ -7,4 +7,4 @@ contenido: unContenido
 	contenido := self submorphs detect: [ :m | m isKindOf: StringMorph ] ifNone: [ nil ].
 
 	"Cambiar el color del texto"
-	contenido color: Color black
+	contenido color: Color black 

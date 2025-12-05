@@ -34,8 +34,8 @@ verificarDatosMudanzaInternacional: unAdicionalAduana conAdicionalTransporte: un
 		self inform: 'El campo seguro internacional es obligatorio'.
 		^ false
 	].
-	(textoSeguroInternacional = 'true' or: [textoSeguroInternacional = 'false']) ifFalse: [
-		self inform: 'El campo seguro internacional debe ser ''true'' o ''false'''.
+	(textoSeguroInternacional = 'si' or: [textoSeguroInternacional = 'no']) ifFalse: [
+		self inform: 'El campo seguro internacional debe ser "si" o "no"'.
 		^ false
 	].
 	

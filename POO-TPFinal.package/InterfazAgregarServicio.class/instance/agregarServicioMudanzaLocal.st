@@ -6,13 +6,13 @@ agregarServicioMudanzaLocal
 
 	unIncluyeCarga := RubTextFieldMorph new
 		                  extent: 275 @ 20;
-		                  ghostText: '¿Incluye carga? true/false'.
+		                  ghostText: '¿Incluye carga? si/no'.
 	self agregarMorphCentrado: unIncluyeCarga conMargen: 10.
 
 
 	unIncluyeDescarga := RubTextFieldMorph new
 		                     extent: 275 @ 20;
-		                     ghostText: '¿Incluye descarga? true/false'.
+		                     ghostText: '¿Incluye descarga? si/no'.
 	self agregarMorphCentrado: unIncluyeDescarga conMargen: 10.
 
 
@@ -28,8 +28,8 @@ agregarServicioMudanzaLocal
 			 conIncluyeDescarga: unIncluyeDescarga
 			 conDistanciaMaxima: unaDistanciaMaxima) ifTrue: [
 			| incluyeCarga incluyeDescarga distanciaMaxima unServicio |
-			incluyeCarga := unIncluyeCarga getText = 'true'.
-			incluyeDescarga := unIncluyeDescarga getText = 'true'.
+			incluyeCarga := unIncluyeCarga getText = 'si'.
+			incluyeDescarga := unIncluyeDescarga getText = 'si'.
 			distanciaMaxima := unaDistanciaMaxima getText asNumber.
 			"1:nombre 2:descripcion 3:valorBase 4:trabajo en altura 5:adicional altura 6:adicional embalaje 7:capacidad"
 			unServicio := ServicioMudanzaLocal

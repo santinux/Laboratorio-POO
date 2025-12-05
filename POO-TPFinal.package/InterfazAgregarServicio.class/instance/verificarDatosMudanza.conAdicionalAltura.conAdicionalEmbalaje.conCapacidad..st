@@ -12,12 +12,12 @@ verificarDatosMudanza: unTrabajoEnAltura conAdicionalAltura: unAdicionalAltura c
 		^ false
 	].
 	
-	(textoAltura = 'true' or: [textoAltura = 'false']) ifFalse: [
-		self inform: 'El campo trabajo en altura debe ser ''true'' o ''false'''.
+	(textoAltura = 'si' or: [textoAltura = 'no']) ifFalse: [
+		self inform: 'El campo trabajo en altura debe ser "si" o "no"'.
 		^ false
 	].
 	
-	esTrabajoAltura := textoAltura = 'true'.
+	esTrabajoAltura := textoAltura = 'si'.
 	
 	"Verificar adicional altura"
 	textoAdicionalAltura := unAdicionalAltura getText.

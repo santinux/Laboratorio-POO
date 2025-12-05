@@ -10,8 +10,8 @@ verificarDatosMudanzaNacional: unDesdeInterior conHaciaInterior: unHaciaInterior
 		self inform: 'El campo desde interior es obligatorio'.
 		^ false
 	].
-	(textoDesdeInterior = 'true' or: [textoDesdeInterior = 'false']) ifFalse: [
-		self inform: 'El campo desde interior debe ser ''true'' o ''false'''.
+	(textoDesdeInterior = 'si' or: [textoDesdeInterior = 'no']) ifFalse: [
+		self inform: 'El campo desde interior debe ser "si" o "no"'.
 		^ false
 	].
 	
@@ -21,8 +21,8 @@ verificarDatosMudanzaNacional: unDesdeInterior conHaciaInterior: unHaciaInterior
 		self inform: 'El campo hacia interior es obligatorio'.
 		^ false
 	].
-	(textoHaciaInterior = 'true' or: [textoHaciaInterior = 'false']) ifFalse: [
-		self inform: 'El campo hacia interior debe ser ''true'' o ''false'''.
+	(textoHaciaInterior = 'si' or: [textoHaciaInterior = 'no']) ifFalse: [
+		self inform: 'El campo hacia interior debe ser "si" o "no"'.
 		^ false
 	].
 	
@@ -32,12 +32,12 @@ verificarDatosMudanzaNacional: unDesdeInterior conHaciaInterior: unHaciaInterior
 		self inform: 'El campo mercadería frágil es obligatorio'.
 		^ false
 	].
-	(textoMercaderiaFragil = 'true' or: [textoMercaderiaFragil = 'false']) ifFalse: [
-		self inform: 'El campo mercadería frágil debe ser ''true'' o ''false'''.
+	(textoMercaderiaFragil = 'si' or: [textoMercaderiaFragil = 'no']) ifFalse: [
+		self inform: 'El campo mercadería frágil debe ser "si" o "no"'.
 		^ false
 	].
 	
-	esMercaderiaFragil := textoMercaderiaFragil = 'true'.
+	esMercaderiaFragil := textoMercaderiaFragil = 'si'.
 	
 	"Verificar adicionalFragil - condicional según mercaderiaFragil"
 	textoAdicionalFragil := unAdicionalFragil getText.

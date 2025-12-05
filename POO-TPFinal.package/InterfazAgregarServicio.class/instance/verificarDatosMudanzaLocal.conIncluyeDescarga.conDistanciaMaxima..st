@@ -12,8 +12,8 @@ verificarDatosMudanzaLocal: unIncluyeCarga conIncluyeDescarga: unIncluyeDescarga
 		^ false
 	].
 	
-	(textoCarga = 'true' or: [textoCarga = 'false']) ifFalse: [
-		self inform: 'El campo incluye carga debe ser ''true'' o ''false'''.
+	(textoCarga = 'si' or: [textoCarga = 'no']) ifFalse: [
+		self inform: 'El campo incluye carga debe ser "si" o "no"'.
 		^ false
 	].
 	
@@ -25,8 +25,8 @@ verificarDatosMudanzaLocal: unIncluyeCarga conIncluyeDescarga: unIncluyeDescarga
 		^ false
 	].
 	
-	(textoDescarga = 'true' or: [textoDescarga = 'false']) ifFalse: [
-		self inform: 'El campo incluye descarga debe ser ''true'' o ''false'''.
+	(textoDescarga = 'si' or: [textoDescarga = 'no']) ifFalse: [
+		self inform: 'El campo incluye descarga debe ser "si" o "no"'.
 		^ false
 	].
 	
