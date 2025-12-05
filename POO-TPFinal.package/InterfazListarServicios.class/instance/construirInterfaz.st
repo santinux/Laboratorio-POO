@@ -1,7 +1,7 @@
 as yet unclassified
-mostrarServicios
-
-	| servicios tablaS tablaServicio datosServicios botonCancelarServicio |
+construirInterfaz
+	"Obtenemos los contratos semanales"
+	| servicios tablaS tablaServicio datosServicios|
 	self removeAllMorphs.
 
 	"Obtengo los contratos semanales"
@@ -30,9 +30,3 @@ mostrarServicios
 	"Abrir la tabla"
 	self agregarMorphIzquierda: tablaServicio obtenerMorph conMargen: 10.
 	self agregarMorphIzquierda: tablaS obtenerMorph conMargen: 10.
-
-	botonCancelarServicio := BotonAccion new
-		                         label: 'Cerrar';
-		                         color: Color orange.
-	botonCancelarServicio mouseAction: [ self initialize ].
-	self agregarMorphCentrado: botonCancelarServicio conMargen: 10
