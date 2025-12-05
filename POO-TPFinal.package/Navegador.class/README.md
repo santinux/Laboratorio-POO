@@ -5,8 +5,6 @@ Soy una subclase de `SystemWindow` con 3 componentes:
 
 Manejo la inicialización de un sistema, y aporto su navegabilidad.
 
-For the Collaborators Part: State my main collaborators and one line about how I interact with them.
-
 Inicialización
 En un Playground escriba lo siguiente para iniciar el navegador listo para usar:
 `Navegador abrir.`

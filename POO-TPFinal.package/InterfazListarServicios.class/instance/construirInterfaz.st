@@ -1,13 +1,10 @@
 as yet unclassified
 construirInterfaz
 	"Obtenemos los contratos semanales"
-	| servicios tablaS tablaServicio datosServicios|
-	self removeAllMorphs.
 
-	"Obtengo los contratos semanales"
 	servicios := empresa servicios.
 
-	"Creo dos tablas para contrato Mudanza uno con el nombre de la tabla y otra con las columnas de datos de Mudanza"
+	"Creamos dos tablas para contrato Mudanza uno con el nombre de la tabla y otra con las columnas de datos de Mudanza"
 	tablaServicio := Tabla
 		                 crearConEncabezados: #( 'Servicios' )
 		                 ancho: 1400
@@ -29,4 +26,4 @@ construirInterfaz
 
 	"Abrir la tabla"
 	self agregarMorphIzquierda: tablaServicio obtenerMorph conMargen: 10.
-	self agregarMorphIzquierda: tablaS obtenerMorph conMargen: 10.
+	self agregarMorphIzquierda: tablaS obtenerMorph conMargen: 10

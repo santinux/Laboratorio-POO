@@ -5,7 +5,12 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"servicios",
+		"tablaS",
+		"tablaServicio",
+		"datosServicios"
+	],
 	"name" : "InterfazListarServicios",
 	"type" : "normal"
 }
