@@ -4,7 +4,7 @@ verificarDatosMudanzaNacional: unDesdeInterior conHaciaInterior: unHaciaInterior
 	
 	| textoDesdeInterior textoHaciaInterior textoMercaderiaFragil textoAdicionalFragil textoDistanciaAcordada textoAdicionalDistancia esMercaderiaFragil |
 	
-	"Verificar desdeInterior - no vacío y booleano válido"
+	"Verificar desdeInterior "
 	textoDesdeInterior := unDesdeInterior getText.
 	textoDesdeInterior isEmpty ifTrue: [
 		self inform: 'El campo desde interior es obligatorio'.
@@ -15,7 +15,7 @@ verificarDatosMudanzaNacional: unDesdeInterior conHaciaInterior: unHaciaInterior
 		^ false
 	].
 	
-	"Verificar haciaInterior - no vacío y booleano válido"
+	"Verificar haciaInterior"
 	textoHaciaInterior := unHaciaInterior getText.
 	textoHaciaInterior isEmpty ifTrue: [
 		self inform: 'El campo hacia interior es obligatorio'.
@@ -26,7 +26,7 @@ verificarDatosMudanzaNacional: unDesdeInterior conHaciaInterior: unHaciaInterior
 		^ false
 	].
 	
-	"Verificar mercaderiaFragil - no vacío y booleano válido"
+	"Verificar mercaderiaFragil "
 	textoMercaderiaFragil := unMercaderiaFragil getText.
 	textoMercaderiaFragil isEmpty ifTrue: [
 		self inform: 'El campo mercadería frágil es obligatorio'.
@@ -39,7 +39,7 @@ verificarDatosMudanzaNacional: unDesdeInterior conHaciaInterior: unHaciaInterior
 	
 	esMercaderiaFragil := textoMercaderiaFragil = 'si'.
 	
-	"Verificar adicionalFragil - condicional según mercaderiaFragil"
+	"Verificar adicionalFragil"
 	textoAdicionalFragil := unAdicionalFragil getText.
 	textoAdicionalFragil isEmpty ifTrue: [
 		self inform: 'El adicional por frágil es obligatorio'.
